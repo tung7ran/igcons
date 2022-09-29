@@ -1,0 +1,66 @@
+.wrap-body{
+    padding-top: 10rem;
+}
+.title{
+    h4{
+        margin: 1rem 0;
+        font-size: 3.6rem;
+        line-height: 1.2;
+        font-weight: 700;
+        span{
+            color: #26948a;
+        }
+    }
+    .social{
+        &__list{
+            &--item{
+                list-style: none;
+                display: inline-block;
+                margin: 1rem 1rem 0 0;
+                a{
+                    text-decoration: none;
+                    width: 4rem;
+                    height: 4rem;
+                }
+            }
+        }
+    }
+}
+.addressTrade{
+    padding: 0 1.5rem;
+    h4{
+        display: block;
+        color: #2E3449;
+        margin: 1.5rem 0 0.8rem 0;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    p{
+        font-size: 1.6rem;
+    }
+}
+.contactForm{
+    &-retangle{
+        &-item-1{
+            top: 10%;
+            left: -1%;
+            width: 144px;
+            height: 144px;
+        }
+        &-item-2{
+            bottom: 43%;
+            left: 14%;
+            width: 42px;
+            height: 42px;
+        }
+        &-item-3{
+            top: 13%;
+            right: 36%;
+            width: 70px;
+            height: 70px
+        }
+        &-item-4{}
+        &-item-5{}
+        &-item-6{}
+    }
+}
