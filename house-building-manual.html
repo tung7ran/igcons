@@ -11,6 +11,7 @@
           integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./sass/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./libraries/aos-master/dist/aos.css">
 </head>
 <body>
     <header class="header">
@@ -85,7 +86,7 @@
     <div class="header-nav">
         <div class="container">
             <ul class="header-nav-list">
-                <li class="header-nav-list-menu-item"><a href="index.html" aria-current="page">Trang chủ</a></li>
+                <li class="header-nav-list-menu-item"><a href="index.html" aria-current="page" class="active">Trang chủ</a></li>
                 <li class="header-nav-list-menu-item header-nav-list-dropdown">
                     <a href="#" class="dropdown-trigger">Xây nhà trọn gói</a>
                     <i class="fas fa-chevron-right"></i>
@@ -104,19 +105,86 @@
                         <a href="libraries.html" class="dropdown-trigger">Thư viện</a>
                         <i class="fas fa-chevron-right"></i>
                     <ul class="header-nav-item-dropdown-submenu-son dropdown dropdown-list">
-                        <li class="header-nav-list-menu-item"><a href="#">Mẫu nhà phố đẹp</a></li>
-                        <li class="header-nav-list-menu-item"><a href="#">Mẫu nội thất đẹp</a></li>
-                        <li class="header-nav-list-menu-item"><a href="#">Mẫu nhà cấp 4 đẹp</a></li>
+                        <li class="header-nav-list-menu-item"><a href="townhouse.html">Mẫu nhà phố đẹp</a></li>
+                        <li class="header-nav-list-menu-item"><a href="furniture.html">Mẫu nội thất đẹp</a></li>
+                        <li class="header-nav-list-menu-item"><a href="four-level house.html">Mẫu nhà cấp 4 đẹp</a></li>
                     </ul>
                 </li>
                 </ul>
                 </li>
-                <li class="header-nav-list-menu-item"><a href="house-building-manual.html"  class="active">Cẩm nang xây nhà</a></li>
+                <li class="header-nav-list-menu-item"><a href="house-building-manual.html">Cẩm nang xây nhà</a></li>
                 <li class="header-nav-list-menu-item"><a href="contact.html">Liên hệ</a></li>
             </ul>            
         </div>
     </div>
     <div class="wrap-body">
+
+        <div class="manualContent container">
+            <div class="manualContent-post">
+                <section>
+                    <div class="manualContent-post-list">
+                        <h4>Cẩm nang xây nhà</h4>
+                        <div id="tab1" class="manualContent-post-list-items change">
+                            <div class="manualContent-post-list-items-item">
+                                <div class="manualContent-post-list-items-item-img">
+                                    <img src="images/Cach-tinh-vat-lieu-xay-nha-200x163.jpg" alt="">
+                                </div>
+                                <div class="manualContent-post-list-items-item-content">
+                                    <h4>Hướng dẫn lập bảng dự trù kinh phí xây nhà tiết kiệm nhất</h4>
+                                    <p>Dự trù kinh phí xây dựng là những biện pháp hàng đầu giúp gia chủ không bị rơi vào thế bị động do thiếu hụt tài chính, kinh phí, đảm bảo tiến độ thi công đã đề ra. Để tìm hiểu rõ hơn các chi phí cần thiết cho việc xây nhà mời bạn cùng IGcons tham khảo bài viết sau đây</p>
+                                    <a href="#" class="manualContent-post-list-items-item-content-button">
+										<div class="manualContent-post-list-items-item-content-button-circle">
+											<svg viewBox="0 0 36 50" class="circular-chart">
+												<path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+												<path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+											</svg>
+										</div>
+										<p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết</p>
+									</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab2" class="manualContent-post__item change" style="display:none">
+                            <h2>Paris</h2>
+                            <p>Paris is the capital of France.</p>
+                        </div>
+                        <div id="tab3" class="manualContent-post__item change" style="display:none">
+                            <h2>tokyo</h2>
+                            <p>Paris is the capital of France.</p>
+                        </div>
+                        <div id="tab4" class="manualContent-post__item change" style="display:none">
+                            <h2>san</h2>
+                            <p>Paris is the capital of France.</p>
+                        </div>
+                        <div class="manualContent-post-item ">
+                            <button class="manualContent-post__item--button" onclick="changeTab('tab1')">1</button>
+                            <button class="manualContent-post__item--button" onclick="changeTab('tab2')">2</button>
+                            <button class="manualContent-post__item--button" onclick="changeTab('tab3')">3</button>
+                            <button class="manualContent-post__item--button" onclick="changeTab('tab4')">4</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="manualContent-sidebarRight">
+                <div class="formSignup">
+                    <div class="manualContent-post-item ">
+                        <button class="manualContent-post__item--button" onclick="changeTab('tab1')">1</button>
+                        <button class="manualContent-post__item--button" onclick="changeTab('tab2')">2</button>
+                        <button class="manualContent-post__item--button" onclick="changeTab('tab3')">3</button>
+                        <button class="manualContent-post__item--button" onclick="changeTab('tab4')">4</button>
+                    </div>
+                </div>
+                <div class="relatedPosts">
+
+                </div>
+            </div>
+        </div>
     </div>
     <footer class="footer">
         <div class="container">
@@ -166,6 +234,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js" ></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" ></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" ></script>
+    <script src="./libraries/aos-master/dist/aos.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
