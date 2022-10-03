@@ -27,3 +27,20 @@ $('.change').slick({
 AOS.init({
     duration: 600,
 });
+
+
+$('.homeBanner').slick({
+  slidesToShow: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.homeBanner-smImage'
+});
+$('.homeBanner-smImage').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.homeBanner',
+  centerMode: true,
+  Infinity: true,
+  arrows: true,
+  focusOnSelect: true,
+});
