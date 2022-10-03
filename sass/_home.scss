@@ -1,0 +1,184 @@
+.frontpage{
+    padding-top: 0 !important;
+    .homeBanner{
+        &-item{
+            position: relative;
+            &-fixW{
+                margin: 0 auto;
+                position: absolute;
+                width: calc(100% *(6/12));
+                top: 0;
+                left: 0;
+                &-resolution{
+                    margin: 18rem 0 0 7rem;
+                    h2{
+                        font-size: 11.2rem;
+                        line-height: 1.2;
+                        font-weight: 400;
+                        font-family: 'SVN-Taken by Vultures',sans-serif;
+                        color: #26948A;
+                        display: flex;
+                        align-items: flex-end;
+                        p{
+                            font-size: 3.2rem;
+                            line-height: 1.2;
+                            font-weight: 700;
+                            font-family:' SF Pro Display',sans-serif;
+                            color: #000;
+                        }
+                    }
+                    .resolution-item{
+                        display: flex;
+                        align-items: stretch;
+                        flex-wrap: wrap;
+                        span{
+                            position: absolute;
+                            top: 0;
+                            left: 0.5rem;
+                            font-size: 7.2rem;
+                            line-height: 1.2;
+                            font-weight: 700;
+                            color: #26948a33;
+                        }
+                        &-son{
+                            position: relative;
+                            width: 50%;
+                            padding: 3.5rem;
+                            padding-top: 4.3rem;
+                            h4{
+                                font-size: 2.4rem;
+                                line-height: 1.5;
+                                color: #2E3449;
+                                font-weight: 700;
+                                margin-bottom: 0.8rem;
+                            }
+                            p{
+                                font-weight: 500;
+                                font-size: 1.6rem;
+                            }
+                        }
+                        .resolution-so1, .resolution-so4{
+                            border-bottom: 1px solid #26948a66;
+                            border-right: 1px solid #26948a66;
+                        }
+                        .resolution-so2, .resolution-so5{
+                            border-bottom: 1px solid #26948a66;
+                            padding-left: 4.3rem;
+                            padding-top: 4.3rem;
+                            span{
+                                left: 1.5rem;
+                            }
+                        }
+                        .resolution-so3, .resolution-so6{
+                            border-right: 1px solid #26948a66;
+                        }
+                    }
+                }
+            }
+            &-fixW-btw{
+                top: -6rem;
+                right: -80rem;
+            }
+        }
+        &-smImage{
+            position: absolute;
+            right: 0;
+            bottom: -17rem;
+            .image{
+                width: 12.5rem !important;
+                height: 12.5rem;
+                margin-right: 1rem;
+                img{
+                    height: 100%;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}
+.homeBanner-item-fixW-resolution.resolution-about{
+    padding: 0 12rem;
+    h2{
+        font-size: 8rem;
+        line-height: 1.4;
+        color: #687474;
+        letter-spacing: .02em;
+        text-shadow: 2px 8px 6px #00000033, 0 -5px 35px #ffffff4d;
+    } 
+    span{
+        font-family: 'Abril Fatface',sans-serif;
+    font-size: 7.2rem;
+    line-height: 1.1;
+    color: #687474;
+    text-transform: uppercase;
+    margin-left: 100px;
+    text-shadow: 2px 8px 6px #00000033, 0 -5px 35px #ffffff4d;
+    }   
+    p{
+        margin-left: 100px;
+        color: #687474;
+        text-shadow: 2px 8px 6px #00000033, 0 -5px 35px #ffffff4d;
+    }
+}
+.orther-contact-wrap {
+    background-color: #2E3449;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    a{
+        display: flex;
+        align-items: center;
+        padding: 36px 48px;
+        justify-content: center;
+        .icon{
+            width: 30px;
+            height: 30px;
+            border-radius: 100rem;
+            margin-right: 20px;
+            animation: phoneRing 2s ease infinite;
+            z-index: 2;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        p{
+            color: #fff;
+            flex: 1;
+            z-index: 2;
+            white-space: nowrap;
+            font-size: 2.4rem;
+        }
+    }
+}
+@keyframes phoneRing{
+    0% {
+        transform:rotate(0) scale(1) skew(1deg)
+    }
+
+    10% {
+        transform:rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    20% {
+        transform:rotate(25deg) scale(1) skew(1deg)
+    }
+
+    30% {
+        transform:rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    40% {
+        transform:rotate(25deg) scale(1) skew(1deg)
+    }
+
+    50% {
+        transform:rotate(0) scale(1) skew(1deg)
+    }
+
+    100% {
+        transform:rotate(0) scale(1) skew(1deg)
+    }
+}

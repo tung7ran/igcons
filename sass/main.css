@@ -33,6 +33,11 @@
   src: url("../font/SFProDisplay-Regular.ttf");
 }
 
+@font-face {
+  font-family: Abril Fatface;
+  src: url("../font/AbrilFatface-Regular.ttf");
+}
+
 .container {
   max-width: 1200px;
 }
@@ -375,6 +380,7 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   color: #26948A;
   font-weight: 500;
+  background-color: #fff;
 }
 
 .header-nav .dropdown .header-nav-list-menu-item a:hover {
@@ -476,6 +482,274 @@
 
 .active {
   color: #26948A !important;
+}
+
+.frontpage {
+  padding-top: 0 !important;
+}
+
+.frontpage .homeBanner-item {
+  position: relative;
+}
+
+.frontpage .homeBanner-item-fixW {
+  margin: 0 auto;
+  position: absolute;
+  width: calc(100% *(6/12));
+  top: 0;
+  left: 0;
+}
+
+.frontpage .homeBanner-item-fixW-resolution {
+  margin: 18rem 0 0 7rem;
+}
+
+.frontpage .homeBanner-item-fixW-resolution h2 {
+  font-size: 11.2rem;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: 'SVN-Taken by Vultures',sans-serif;
+  color: #26948A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.frontpage .homeBanner-item-fixW-resolution h2 p {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: ' SF Pro Display',sans-serif;
+  color: #000;
+}
+
+.frontpage .homeBanner-item-fixW-resolution .resolution-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.frontpage .homeBanner-item-fixW-resolution .resolution-item span {
+  position: absolute;
+  top: 0;
+  left: 0.5rem;
+  font-size: 7.2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #26948a33;
+}
+
+.frontpage .homeBanner-item-fixW-resolution .resolution-item-son {
+  position: relative;
+  width: 50%;
+  padding: 3.5rem;
+  padding-top: 4.3rem;
+}
+
+.frontpage .homeBanner-item-fixW-resolution .resolution-item-son h4 {
+  font-size: 2.4rem;
+  line-height: 1.5;
+  color: #2E3449;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.frontpage .homeBanner-item-fixW-resolution .resolution-item-son p {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.frontpage .homeBanner-item-fixW-resolution .resolution-item .resolution-so1, .frontpage .homeBanner-item-fixW-resolution .resolution-item .resolution-so4 {
+  border-bottom: 1px solid #26948a66;
+  border-right: 1px solid #26948a66;
+}
+
+.frontpage .homeBanner-item-fixW-resolution .resolution-item .resolution-so2, .frontpage .homeBanner-item-fixW-resolution .resolution-item .resolution-so5 {
+  border-bottom: 1px solid #26948a66;
+  padding-left: 4.3rem;
+  padding-top: 4.3rem;
+}
+
+.frontpage .homeBanner-item-fixW-resolution .resolution-item .resolution-so2 span, .frontpage .homeBanner-item-fixW-resolution .resolution-item .resolution-so5 span {
+  left: 1.5rem;
+}
+
+.frontpage .homeBanner-item-fixW-resolution .resolution-item .resolution-so3, .frontpage .homeBanner-item-fixW-resolution .resolution-item .resolution-so6 {
+  border-right: 1px solid #26948a66;
+}
+
+.frontpage .homeBanner-item-fixW-btw {
+  top: -6rem;
+  right: -80rem;
+}
+
+.frontpage .homeBanner-smImage {
+  position: absolute;
+  right: 0;
+  bottom: -17rem;
+}
+
+.frontpage .homeBanner-smImage .image {
+  width: 12.5rem !important;
+  height: 12.5rem;
+  margin-right: 1rem;
+}
+
+.frontpage .homeBanner-smImage .image img {
+  height: 100%;
+  border-radius: 8px;
+}
+
+.homeBanner-item-fixW-resolution.resolution-about {
+  padding: 0 12rem;
+}
+
+.homeBanner-item-fixW-resolution.resolution-about h2 {
+  font-size: 8rem;
+  line-height: 1.4;
+  color: #687474;
+  letter-spacing: .02em;
+  text-shadow: 2px 8px 6px #00000033, 0 -5px 35px #ffffff4d;
+}
+
+.homeBanner-item-fixW-resolution.resolution-about span {
+  font-family: 'Abril Fatface',sans-serif;
+  font-size: 7.2rem;
+  line-height: 1.1;
+  color: #687474;
+  text-transform: uppercase;
+  margin-left: 100px;
+  text-shadow: 2px 8px 6px #00000033, 0 -5px 35px #ffffff4d;
+}
+
+.homeBanner-item-fixW-resolution.resolution-about p {
+  margin-left: 100px;
+  color: #687474;
+  text-shadow: 2px 8px 6px #00000033, 0 -5px 35px #ffffff4d;
+}
+
+.orther-contact-wrap {
+  background-color: #2E3449;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.orther-contact-wrap a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 36px 48px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.orther-contact-wrap a .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 100rem;
+  margin-right: 20px;
+  -webkit-animation: phoneRing 2s ease infinite;
+          animation: phoneRing 2s ease infinite;
+  z-index: 2;
+}
+
+.orther-contact-wrap a .icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.orther-contact-wrap a p {
+  color: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  z-index: 2;
+  white-space: nowrap;
+  font-size: 2.4rem;
+}
+
+@-webkit-keyframes phoneRing {
+  0% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+            transform: rotate(0) scale(1) skew(1deg);
+  }
+  10% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+            transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+            transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  30% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+            transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  40% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+            transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  50% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+            transform: rotate(0) scale(1) skew(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+            transform: rotate(0) scale(1) skew(1deg);
+  }
+}
+
+@keyframes phoneRing {
+  0% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+            transform: rotate(0) scale(1) skew(1deg);
+  }
+  10% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+            transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+            transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  30% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+            transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  40% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+            transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  50% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+            transform: rotate(0) scale(1) skew(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+            transform: rotate(0) scale(1) skew(1deg);
+  }
 }
 
 html,
