@@ -8,21 +8,20 @@ $(window).scroll(function() {
     }
 });
 
-function changeTab(tabName) {
-    var i;
-    var x = document.getElementsByClassName("change");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    document.getElementById(tabName).style.display = "block";
-  }
-
 $('.construction-list').slick({
   slidesToShow: 3,
   slidesToScroll: 3,
   dots: true,
   Infinity: false,
   rows: 2,
+});
+
+$('.change').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  Infinity: true,
+  rows: 6,
 });
 
 AOS.init({
