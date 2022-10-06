@@ -115,6 +115,13 @@
                     flex-direction: column;
                     align-items: center;
                     color: #fff;
+                    &:hover .header-wrap-sample-icon{
+                        animation: jelly 1s ease-in-out;
+                    }
+                    &:hover {
+                        color: #26948A;
+                    }
+                   
                 }
                 &-icon{
                     width: 4rem;
@@ -123,6 +130,7 @@
                     .icon{
                         object-fit: contain;
                     }
+                   
                 }
                 &-text{
                     text-align: center;
@@ -210,6 +218,7 @@
         cursor: pointer;
         transition: 0.3s ease-in-out;
         display: block;
+        width: 20rem;
     }
     &-list{
         display: flex;
@@ -248,6 +257,7 @@
         background: #fff;
         border-radius: 10px;
         width: 100%;
+        z-index: 11;
         .header-nav-list-menu-item{
             flex: 1;
             text-align: center;
@@ -280,3 +290,21 @@
     transition: 10s linear;
     z-index: 100;
 }
+@keyframes jelly {
+    from,to {
+      -webkit-transform: scale(1,1);
+      transform: scale(1,1)
+    }
+    25% {
+      -webkit-transform: scale(.9,1.1);
+      transform: scale(.9,1.1)
+    }
+    50% {
+      -webkit-transform: scale(1.1,.9);
+      transform: scale(1.1,.9)
+    }
+    75% {
+      -webkit-transform: scale(.95,1.05);
+      transform: scale(.95,1.05)
+    }
+  }
