@@ -1,5 +1,7 @@
-.wrap-body{
-    padding-top: 10rem;
+
+.contact-content{
+    margin-bottom: 20rem;
+    margin-top: 10rem;
 }
 .title{
     h4{
@@ -59,8 +61,27 @@
             width: 70px;
             height: 70px
         }
-        &-item-4{}
-        &-item-5{}
-        &-item-6{}
+        &-item-4{
+            bottom: 39%;
+            right: 28%;
+            width: 70px;
+            height: 70px;
+        }
+        &-item-5{
+            bottom: 5%;
+            right: 12%;
+            width: 41px;
+            height: 41px;
+        }
+        &-item-6{
+            width: 105px;
+            height: 105px;
+            right: 0;
+            top: 10%;
+        }
     }
+    
+}
+iframe{
+    margin-bottom: -1rem;
 }

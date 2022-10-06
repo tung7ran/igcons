@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chủ</title>
+    <title>Cẩm nang xây nhà</title>
     <link rel="icon" type="image/png" sizes="" href="images/logo/cropped-header-logo-32x32.png">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
           integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./sass/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./libraries/aos-master/dist/aos.css">
 </head>
 <body>
     <header class="header">
@@ -32,7 +33,7 @@
                     </div>
                     <div class="header-wrap-sample">
                         <div class="header-wrap-sample-item">
-                                <a href="#" class="header-wrap-sample-link">
+                                <a class="header-wrap-sample-link">
                                     <div class="header-wrap-sample-icon">
                                         <img width="256" height="256" src="images/tin-tuc.png" alt="" class="icon entered lazyloaded">
                                     </div>
@@ -40,7 +41,7 @@
                                 </a>
                             </div>
                                 <div class="header-wrap-sample-item">
-                                <a href="#" class="header-wrap-sample-link">
+                                <a class="header-wrap-sample-link">
                                     <div class="header-wrap-sample-icon">
                                         <img width="256" height="256" src="images/icon-line-23.png" alt="">
                                     </div>
@@ -48,7 +49,7 @@
                                 </a>
                             </div>
                                 <div class="header-wrap-sample-item">
-                                <a href="#" class="header-wrap-sample-link">
+                                <a class="header-wrap-sample-link">
                                     <div class="header-wrap-sample-icon">
                                         <img width="40" height="40" src="images/header-sample-3.svg" alt="">
                                     </div>
@@ -83,41 +84,593 @@
         </div>
     </header>
     <div class="header-nav">
-        <div class="container">
-            <ul class="header-nav-list">
-                <li class="header-nav-list-menu-item"><a href="index.html" aria-current="page">Trang chủ</a></li>
-                <li class="header-nav-list-menu-item header-nav-list-dropdown">
-                    <a href="#" class="dropdown-trigger">Xây nhà trọn gói</a>
-                    <i class="fas fa-chevron-right"></i>
-                <ul class="header-nav-item-dropdown-submenu dropdown">
-                    <li class="header-nav-list-menu-item"><a href="rough.html">Xây nhà trọn gói phần thô</a></li>
-                    <li class="header-nav-list-menu-item"><a href="pass.html">Xây nhà trọn gói – Chìa khóa trao tay</a></li>
-                </ul>
-                </li>
-                <li class="header-nav-list-menu-item"><a href="design-consultancy.html">Tư vấn thiết kế</a></li>
-                <li class="header-nav-list-menu-item header-nav-list-dropdown">
-                    <a href="#" class="dropdown-trigger">Dự án tiêu biểu</a>
-                    <i class="fas fa-chevron-right"></i>
-                <ul class="header-nav-item-dropdown-submenu dropdown">
-                    <li class="header-nav-list-menu-item "><a href="construction.html">IGcons thi công</a></li>
-                    <li class="header-nav-list-menu-item header-nav-list-dropdown header-nav-list-dropdown-son">
-                        <a href="libraries.html" class="dropdown-trigger">Thư viện</a>
-                        <i class="fas fa-chevron-right"></i>
-                    <ul class="header-nav-item-dropdown-submenu-son dropdown dropdown-list">
-                        <li class="header-nav-list-menu-item"><a href="#">Mẫu nhà phố đẹp</a></li>
-                        <li class="header-nav-list-menu-item"><a href="#">Mẫu nội thất đẹp</a></li>
-                        <li class="header-nav-list-menu-item"><a href="#">Mẫu nhà cấp 4 đẹp</a></li>
-                    </ul>
-                </li>
-                </ul>
-                </li>
-                <li class="header-nav-list-menu-item"><a href="house-building-manual.html"  class="active">Cẩm nang xây nhà</a></li>
-                <li class="header-nav-list-menu-item"><a href="contact.html">Liên hệ</a></li>
-            </ul>            
+        <div class="header-navbar navbar">
+            <div class="container navbar-container">
+                <div class="menu">
+                    <input type="checkbox" name="" id="" class="checkbox-menu">
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <ul class="header-nav-list menu-items" >
+                        <li class="header-nav-list-menu-item"><a href="index.html" aria-current="page">Trang chủ</a></li>
+                        <li class="header-nav-list-menu-item header-nav-list-dropdown">
+                            <a class="dropdown-trigger">Xây nhà trọn gói</a>
+                            <i class="fas fa-chevron-right"></i>
+                        <ul class="header-nav-item-dropdown-submenu dropdown">
+                            <li class="header-nav-list-menu-item"><a href="rough.html">Xây nhà trọn gói phần thô</a></li>
+                            <li class="header-nav-list-menu-item"><a href="pass.html">Xây nhà trọn gói – Chìa khóa trao tay</a></li>
+                        </ul>
+                        </li>
+                        <li class="header-nav-list-menu-item"><a href="design-consultancy.html">Tư vấn thiết kế</a></li>
+                        <li class="header-nav-list-menu-item header-nav-list-dropdown">
+                            <a class="dropdown-trigger">Dự án tiêu biểu</a>
+                            <i class="fas fa-chevron-right"></i>
+                        <ul class="header-nav-item-dropdown-submenu dropdown">
+                            <li class="header-nav-list-menu-item "><a href="construction.html">IGcons thi công</a></li>
+                            <li class="header-nav-list-menu-item header-nav-list-dropdown header-nav-list-dropdown-son">
+                                <a href="libraries.html" class="dropdown-trigger">Thư viện</a>
+                                <i class="fas fa-chevron-right"></i>
+                            <ul class="header-nav-item-dropdown-submenu-son dropdown dropdown-list">
+                                <li class="header-nav-list-menu-item"><a href="townhouse.html">Mẫu nhà phố đẹp</a></li>
+                                <li class="header-nav-list-menu-item"><a href="furniture.html">Mẫu nội thất đẹp</a></li>
+                                <li class="header-nav-list-menu-item"><a href="four-level house.html">Mẫu nhà cấp 4 đẹp</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                        </li>
+                        <li class="header-nav-list-menu-item"><a href="house-building-manual.html"  class="active">Cẩm nang xây nhà</a></li>
+                        <li class="header-nav-list-menu-item"><a href="contact.html">Liên hệ</a></li>
+                    </ul>   
+                </div> 
+            </div>
+        </div>
+        <div class="logo">
+            <img src="images/logo/logo.png" alt="" style="width: 150px; height: 45px;">
         </div>
     </div>
     <div class="wrap-body">
+
+        <div class="manualContent container">
+            <div class="manualContent-post">
+                <section>
+                    <div class="manualContent-post-list">
+                        <h4>Cẩm nang xây nhà</h4>
+                        <div id="tab1" class="manualContent-post-list-items change">
+                            <div class="manualContent-post-list-items-item">
+                                <div class="manualContent-post-list-items-item-img">
+                                    <img src="images/Cach-tinh-vat-lieu-xay-nha-200x163.jpg" alt="">
+                                </div>
+                                <div class="manualContent-post-list-items-item-content">
+                                    <h4>Hướng dẫn lập bảng dự trù kinh phí xây nhà tiết kiệm nhất</h4>
+                                    <p>Dự trù kinh phí xây dựng là những biện pháp hàng đầu giúp gia chủ không bị rơi vào thế bị động do thiếu hụt tài chính, kinh phí, đảm bảo tiến độ thi công đã đề ra. Để tìm hiểu rõ hơn các chi phí cần thiết cho việc xây nhà mời bạn cùng IGcons tham khảo bài viết sau đây</p>
+                                    <a href="detail.html" class="manualContent-post-list-items-item-content-button">
+										<div class="manualContent-post-list-items-item-content-button-circle">
+											<svg viewBox="0 0 36 50" class="circular-chart">
+												<path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+												<path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+											</svg>
+										</div>
+										<p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết</p>
+									</a>
+                                </div>
+                            </div>
+                            <div class="manualContent-post-list-items-item">
+                                <div class="manualContent-post-list-items-item-img">
+                                    <img src="images/mat-do-xay-dung-200x200.jpg" alt="">
+                                </div>
+                                <div class="manualContent-post-list-items-item-content">
+                                    <h4>Mật độ xây dựng là gì? Mật độ xây dựng nhà phố tối đa ?</h4>
+                                    <p>Mật độ xây dựng là tỷ lệ diện tích chiếm đất của các công trình kiến trúc trên tổng diện tích lô đất. Dưới đây mà quy định về mật độ xây dựng theo Quy chuẩn kỹ thuật quốc gia về quy hoạch xây dựng có hiệu lực từ ngày 05/7/2021.</p>
+                                    <a href="detail.html" class="manualContent-post-list-items-item-content-button">
+										<div class="manualContent-post-list-items-item-content-button-circle">
+											<svg viewBox="0 0 36 50" class="circular-chart">
+												<path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+												<path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+											</svg>
+										</div>
+										<p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết</p>
+									</a>
+                                </div>
+                            </div>
+                            <div class="manualContent-post-list-items-item">
+                                <div class="manualContent-post-list-items-item-img">
+                                    <img src="images/baogia (14).jpg" alt="">
+                                </div>
+                                <div class="manualContent-post-list-items-item-content">
+                                    <h4>[update] Mẫu hợp đồng xây dựng nhà ở trọn gói chính xác nhất</h4>
+                                    <p>Làm thế nào để tránh xảy ra những sai sót trong quá trình thi công? Rất dễ chỉ cần nhớ những lưu ý nhỏ dưới đây khi ký mẫu hợp đồng xây nhà trọn gói với công ty nhận thầu xây dựng.</p>
+                                    <a href="detail.html" class="manualContent-post-list-items-item-content-button">
+										<div class="manualContent-post-list-items-item-content-button-circle">
+											<svg viewBox="0 0 36 50" class="circular-chart">
+												<path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+												<path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+											</svg>
+										</div>
+										<p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết</p>
+									</a>
+                                </div>
+                            </div>
+                            <div class="manualContent-post-list-items-item">
+                                <div class="manualContent-post-list-items-item-img">
+                                    <img src="images/cauthang-03.jpg" alt="">
+                                </div>
+                                <div class="manualContent-post-list-items-item-content">
+                                    <h4>CẦU THANG BIỆT THỰ ĐẸP, HIỆN ĐẠI NHẤT 2022</h4>
+                                    <p>Mẫu cầu thang biệt thự là sự ưu tiên hàng đầu vì nó là bộ mặt của nhà biệt thự. Sau đây là TOP các mẫu cầu thang biệt thự và những lưu ý khi lựa chọn.</p>
+                                    <a href="detail.html" class="manualContent-post-list-items-item-content-button">
+										<div class="manualContent-post-list-items-item-content-button-circle">
+											<svg viewBox="0 0 36 50" class="circular-chart">
+												<path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+												<path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+											</svg>
+										</div>
+										<p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết</p>
+									</a>
+                                </div>
+                            </div>
+                            <div class="manualContent-post-list-items-item">
+                                <div class="manualContent-post-list-items-item-img">
+                                    <img src="images/giayphep-xay-dung.jpg" alt="">
+                                </div>
+                                <div class="manualContent-post-list-items-item-content">
+                                    <h4>Hồ sơ, trình tự thủ tục xin cấp giấy phép xây dựng nhà ở mới nhất 2022</h4>
+                                    <p>Thủ tục xin cấp giấy phép xây dựng nhà ở? Xin giấy phép cải tạo nhà, hồ sơ đề nghị điều chỉnh giấy phép xây dựng? thời gian xin giấy phép xây dựng</p>
+                                    <a href="detail.html" class="manualContent-post-list-items-item-content-button">
+										<div class="manualContent-post-list-items-item-content-button-circle">
+											<svg viewBox="0 0 36 50" class="circular-chart">
+												<path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+												<path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+											</svg>
+										</div>
+										<p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết</p>
+									</a>
+                                </div>
+                            </div>
+                            <div class="manualContent-post-list-items-item">
+                                <div class="manualContent-post-list-items-item-img">
+                                    <img src="images/kien-truc-nha-4-tang_page-0001-200x200.jpg" alt="">
+                                </div>
+                                <div class="manualContent-post-list-items-item-content">
+                                    <h4>Bản vẽ nhà phố 4 tầng 1 tum đẹp, mặt tiền 7m</h4>
+                                    <p>Được thiết kế trên mảnh đất có diện tích 7.1x15m với ngõ trước cửa nhà rộng 3.7 m. Công năng của ngôi nhà thuộc dạng nhà phố 4 tầng 1 tum.</p>
+                                    <a href="detail.html" class="manualContent-post-list-items-item-content-button">
+										<div class="manualContent-post-list-items-item-content-button-circle">
+											<svg viewBox="0 0 36 50" class="circular-chart">
+												<path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+												<path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+											</svg>
+										</div>
+										<p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết</p>
+									</a>
+                                </div>
+                            </div>
+                            <div class="manualContent-post-list-items-item">
+                                <div class="manualContent-post-list-items-item-img">
+                                    <img src="images/Cach-tinh-vat-lieu-xay-nha-200x163.jpg" alt="">
+                                </div>
+                                <div class="manualContent-post-list-items-item-content">
+                                    <h4>Hướng dẫn lập bảng dự trù kinh phí xây nhà tiết kiệm nhất</h4>
+                                    <p>Dự trù kinh phí xây dựng là những biện pháp hàng đầu giúp gia chủ không bị rơi vào thế bị động do thiếu hụt tài chính, kinh phí, đảm bảo tiến độ thi công đã đề ra. Để tìm hiểu rõ hơn các chi phí cần thiết cho việc xây nhà mời bạn cùng IGcons tham khảo bài viết sau đây</p>
+                                    <a href="detail.html" class="manualContent-post-list-items-item-content-button">
+										<div class="manualContent-post-list-items-item-content-button-circle">
+											<svg viewBox="0 0 36 50" class="circular-chart">
+												<path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+												<path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+											</svg>
+										</div>
+										<p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết</p>
+									</a>
+                                </div>
+                            </div>
+                            <div class="manualContent-post-list-items-item">
+                                <div class="manualContent-post-list-items-item-img">
+                                    <img src="images/Cach-tinh-vat-lieu-xay-nha-200x163.jpg" alt="">
+                                </div>
+                                <div class="manualContent-post-list-items-item-content">
+                                    <h4>Hướng dẫn lập bảng dự trù kinh phí xây nhà tiết kiệm nhất</h4>
+                                    <p>Dự trù kinh phí xây dựng là những biện pháp hàng đầu giúp gia chủ không bị rơi vào thế bị động do thiếu hụt tài chính, kinh phí, đảm bảo tiến độ thi công đã đề ra. Để tìm hiểu rõ hơn các chi phí cần thiết cho việc xây nhà mời bạn cùng IGcons tham khảo bài viết sau đây</p>
+                                    <a href="detail.html" class="manualContent-post-list-items-item-content-button">
+										<div class="manualContent-post-list-items-item-content-button-circle">
+											<svg viewBox="0 0 36 50" class="circular-chart">
+												<path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+												<path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+											</svg>
+										</div>
+										<p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết</p>
+									</a>
+                                </div>
+                            </div>
+                            <div class="manualContent-post-list-items-item">
+                                <div class="manualContent-post-list-items-item-img">
+                                    <img src="images/Cach-tinh-vat-lieu-xay-nha-200x163.jpg" alt="">
+                                </div>
+                                <div class="manualContent-post-list-items-item-content">
+                                    <h4>Hướng dẫn lập bảng dự trù kinh phí xây nhà tiết kiệm nhất</h4>
+                                    <p>Dự trù kinh phí xây dựng là những biện pháp hàng đầu giúp gia chủ không bị rơi vào thế bị động do thiếu hụt tài chính, kinh phí, đảm bảo tiến độ thi công đã đề ra. Để tìm hiểu rõ hơn các chi phí cần thiết cho việc xây nhà mời bạn cùng IGcons tham khảo bài viết sau đây</p>
+                                    <a href="detail.html" class="manualContent-post-list-items-item-content-button">
+										<div class="manualContent-post-list-items-item-content-button-circle">
+											<svg viewBox="0 0 36 50" class="circular-chart">
+												<path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+												<path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+											</svg>
+										</div>
+										<p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết</p>
+									</a>
+                                </div>
+                            </div>
+                            <div class="manualContent-post-list-items-item">
+                                <div class="manualContent-post-list-items-item-img">
+                                    <img src="images/Cach-tinh-vat-lieu-xay-nha-200x163.jpg" alt="">
+                                </div>
+                                <div class="manualContent-post-list-items-item-content">
+                                    <h4>Hướng dẫn lập bảng dự trù kinh phí xây nhà tiết kiệm nhất</h4>
+                                    <p>Dự trù kinh phí xây dựng là những biện pháp hàng đầu giúp gia chủ không bị rơi vào thế bị động do thiếu hụt tài chính, kinh phí, đảm bảo tiến độ thi công đã đề ra. Để tìm hiểu rõ hơn các chi phí cần thiết cho việc xây nhà mời bạn cùng IGcons tham khảo bài viết sau đây</p>
+                                    <a href="detail.html" class="manualContent-post-list-items-item-content-button">
+										<div class="manualContent-post-list-items-item-content-button-circle">
+											<svg viewBox="0 0 36 50" class="circular-chart">
+												<path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+												<path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+											</svg>
+										</div>
+										<p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết</p>
+									</a>
+                                </div>
+                            </div>
+                            <div class="manualContent-post-list-items-item">
+                                <div class="manualContent-post-list-items-item-img">
+                                    <img src="images/Cach-tinh-vat-lieu-xay-nha-200x163.jpg" alt="">
+                                </div>
+                                <div class="manualContent-post-list-items-item-content">
+                                    <h4>Hướng dẫn lập bảng dự trù kinh phí xây nhà tiết kiệm nhất</h4>
+                                    <p>Dự trù kinh phí xây dựng là những biện pháp hàng đầu giúp gia chủ không bị rơi vào thế bị động do thiếu hụt tài chính, kinh phí, đảm bảo tiến độ thi công đã đề ra. Để tìm hiểu rõ hơn các chi phí cần thiết cho việc xây nhà mời bạn cùng IGcons tham khảo bài viết sau đây</p>
+                                    <a href="detail.html" class="manualContent-post-list-items-item-content-button">
+										<div class="manualContent-post-list-items-item-content-button-circle">
+											<svg viewBox="0 0 36 50" class="circular-chart">
+												<path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+												<path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+											</svg>
+										</div>
+										<p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết</p>
+									</a>
+                                </div>
+                            </div>
+                            <div class="manualContent-post-list-items-item">
+                                <div class="manualContent-post-list-items-item-img">
+                                    <img src="images/Cach-tinh-vat-lieu-xay-nha-200x163.jpg" alt="">
+                                </div>
+                                <div class="manualContent-post-list-items-item-content">
+                                    <h4>Hướng dẫn lập bảng dự trù kinh phí xây nhà tiết kiệm nhất</h4>
+                                    <p>Dự trù kinh phí xây dựng là những biện pháp hàng đầu giúp gia chủ không bị rơi vào thế bị động do thiếu hụt tài chính, kinh phí, đảm bảo tiến độ thi công đã đề ra. Để tìm hiểu rõ hơn các chi phí cần thiết cho việc xây nhà mời bạn cùng IGcons tham khảo bài viết sau đây</p>
+                                    <a href="detail.html" class="manualContent-post-list-items-item-content-button">
+										<div class="manualContent-post-list-items-item-content-button-circle">
+											<svg viewBox="0 0 36 50" class="circular-chart">
+												<path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+												<path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+											</svg>
+										</div>
+										<p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết</p>
+									</a>
+                                </div>
+                            </div>
+                            <div class="manualContent-post-list-items-item">
+                                <div class="manualContent-post-list-items-item-img">
+                                    <img src="images/Cach-tinh-vat-lieu-xay-nha-200x163.jpg" alt="">
+                                </div>
+                                <div class="manualContent-post-list-items-item-content">
+                                    <h4>Hướng dẫn lập bảng dự trù kinh phí xây nhà tiết kiệm nhất</h4>
+                                    <p>Dự trù kinh phí xây dựng là những biện pháp hàng đầu giúp gia chủ không bị rơi vào thế bị động do thiếu hụt tài chính, kinh phí, đảm bảo tiến độ thi công đã đề ra. Để tìm hiểu rõ hơn các chi phí cần thiết cho việc xây nhà mời bạn cùng IGcons tham khảo bài viết sau đây</p>
+                                    <a href="detail.html" class="manualContent-post-list-items-item-content-button">
+										<div class="manualContent-post-list-items-item-content-button-circle">
+											<svg viewBox="0 0 36 50" class="circular-chart">
+												<path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+												<path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+											</svg>
+										</div>
+										<p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết</p>
+									</a>
+                                </div>
+                            </div>
+                            <div class="manualContent-post-list-items-item">
+                                <div class="manualContent-post-list-items-item-img">
+                                    <img src="images/Cach-tinh-vat-lieu-xay-nha-200x163.jpg" alt="">
+                                </div>
+                                <div class="manualContent-post-list-items-item-content">
+                                    <h4>Hướng dẫn lập bảng dự trù kinh phí xây nhà tiết kiệm nhất</h4>
+                                    <p>Dự trù kinh phí xây dựng là những biện pháp hàng đầu giúp gia chủ không bị rơi vào thế bị động do thiếu hụt tài chính, kinh phí, đảm bảo tiến độ thi công đã đề ra. Để tìm hiểu rõ hơn các chi phí cần thiết cho việc xây nhà mời bạn cùng IGcons tham khảo bài viết sau đây</p>
+                                    <a href="detail.html" class="manualContent-post-list-items-item-content-button">
+										<div class="manualContent-post-list-items-item-content-button-circle">
+											<svg viewBox="0 0 36 50" class="circular-chart">
+												<path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+												<path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+											</svg>
+										</div>
+										<p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết</p>
+									</a>
+                                </div>
+                            </div>
+                            <div class="manualContent-post-list-items-item">
+                                <div class="manualContent-post-list-items-item-img">
+                                    <img src="images/Cach-tinh-vat-lieu-xay-nha-200x163.jpg" alt="">
+                                </div>
+                                <div class="manualContent-post-list-items-item-content">
+                                    <h4>Hướng dẫn lập bảng dự trù kinh phí xây nhà tiết kiệm nhất</h4>
+                                    <p>Dự trù kinh phí xây dựng là những biện pháp hàng đầu giúp gia chủ không bị rơi vào thế bị động do thiếu hụt tài chính, kinh phí, đảm bảo tiến độ thi công đã đề ra. Để tìm hiểu rõ hơn các chi phí cần thiết cho việc xây nhà mời bạn cùng IGcons tham khảo bài viết sau đây</p>
+                                    <a href="detail.html" class="manualContent-post-list-items-item-content-button">
+										<div class="manualContent-post-list-items-item-content-button-circle">
+											<svg viewBox="0 0 36 50" class="circular-chart">
+												<path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+												<path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+											</svg>
+										</div>
+										<p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết</p>
+									</a>
+                                </div>
+                            </div>
+                            <div class="manualContent-post-list-items-item">
+                                <div class="manualContent-post-list-items-item-img">
+                                    <img src="images/Cach-tinh-vat-lieu-xay-nha-200x163.jpg" alt="">
+                                </div>
+                                <div class="manualContent-post-list-items-item-content">
+                                    <h4>Hướng dẫn lập bảng dự trù kinh phí xây nhà tiết kiệm nhất</h4>
+                                    <p>Dự trù kinh phí xây dựng là những biện pháp hàng đầu giúp gia chủ không bị rơi vào thế bị động do thiếu hụt tài chính, kinh phí, đảm bảo tiến độ thi công đã đề ra. Để tìm hiểu rõ hơn các chi phí cần thiết cho việc xây nhà mời bạn cùng IGcons tham khảo bài viết sau đây</p>
+                                    <a href="detail.html" class="manualContent-post-list-items-item-content-button">
+										<div class="manualContent-post-list-items-item-content-button-circle">
+											<svg viewBox="0 0 36 50" class="circular-chart">
+												<path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+												<path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+											</svg>
+										</div>
+										<p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết</p>
+									</a>
+                                </div>
+                            </div>
+                            <div class="manualContent-post-list-items-item">
+                                <div class="manualContent-post-list-items-item-img">
+                                    <img src="images/Cach-tinh-vat-lieu-xay-nha-200x163.jpg" alt="">
+                                </div>
+                                <div class="manualContent-post-list-items-item-content">
+                                    <h4>Hướng dẫn lập bảng dự trù kinh phí xây nhà tiết kiệm nhất</h4>
+                                    <p>Dự trù kinh phí xây dựng là những biện pháp hàng đầu giúp gia chủ không bị rơi vào thế bị động do thiếu hụt tài chính, kinh phí, đảm bảo tiến độ thi công đã đề ra. Để tìm hiểu rõ hơn các chi phí cần thiết cho việc xây nhà mời bạn cùng IGcons tham khảo bài viết sau đây</p>
+                                    <a href="detail.html" class="manualContent-post-list-items-item-content-button">
+										<div class="manualContent-post-list-items-item-content-button-circle">
+											<svg viewBox="0 0 36 50" class="circular-chart">
+												<path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+												<path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+											</svg>
+										</div>
+										<p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết</p>
+									</a>
+                                </div>
+                            </div>
+                            <div class="manualContent-post-list-items-item">
+                                <div class="manualContent-post-list-items-item-img">
+                                    <img src="images/Cach-tinh-vat-lieu-xay-nha-200x163.jpg" alt="">
+                                </div>
+                                <div class="manualContent-post-list-items-item-content">
+                                    <h4>Hướng dẫn lập bảng dự trù kinh phí xây nhà tiết kiệm nhất</h4>
+                                    <p>Dự trù kinh phí xây dựng là những biện pháp hàng đầu giúp gia chủ không bị rơi vào thế bị động do thiếu hụt tài chính, kinh phí, đảm bảo tiến độ thi công đã đề ra. Để tìm hiểu rõ hơn các chi phí cần thiết cho việc xây nhà mời bạn cùng IGcons tham khảo bài viết sau đây</p>
+                                    <a href="detail.html" class="manualContent-post-list-items-item-content-button">
+										<div class="manualContent-post-list-items-item-content-button-circle">
+											<svg viewBox="0 0 36 50" class="circular-chart">
+												<path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+												<path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+													a 15.9155 15.9155 0 0 1 0 31.831
+													a 15.9155 15.9155 0 0 1 0 -31.831">
+												</path>
+											</svg>
+										</div>
+										<p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết</p>
+									</a>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+            </div>
+            <div class="manualContent-sidebarRight">
+                <div class="formSignup">
+                    <h4>
+                        <p>Đăng ký</p>
+                        Xem Bảng Giá
+                    </h4>
+                    <p> Nhập email và số điện thoại, chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất </p>
+                    <div class="form">
+                        <form action="">
+                            <div class="form-item form-item-btw-son">   
+                                <input class="form-item-2 " type="text" placeholder="Emai" required="required"> 
+                            </div>
+                            <div class="form-item form-item-btw-son">               
+                                <input class="form-item-3" type="text" placeholder="Số điên thoại" required="required"> 
+                                <p>+84</p>
+                            </div>
+                            <div class="form-item-5">
+                                <button type="submit" class="form-item-5s" s="">
+                                    <img src="images/evolope.svg" alt="">
+                                    <p class="text">Gửi ngay</p>
+                                </button>
+                                <span class="curved curved-left"></span>
+                                <span class="curved curved-right"></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="relatedPosts">
+                    <h4 class="heading-line">IGCONS đang thi công</h4>
+                    <div class="relatePosts-list list">
+                        <div class="img">
+                            <img src="images/anh-bia-1-379x760.jpg" alt="">
+                        </div>
+                        <div class="right">
+                        <a href="detail.html">Nhà anh Khánh, Anh Hải-Long Biên (6.25×14.4m)</a>
+                        <p>Xây nhà trọn gói tại quận Long Biên- Anh Khánh và anh Hải, Ngọc Thụy</p>
+                        </div>
+                    </div>
+                    <div class="relatePosts-list list">
+                        <div class="img">
+                            <img src="images/anh-bia-2-370x260.jpg" alt="">
+                        </div>
+                        <div class="right">
+                        <a href="detail.html">Nhà anh Khánh, Anh Hải-Long Biên (6.25×14.4m)</a>
+                        <p>Xây nhà trọn gói tại quận Long Biên- Anh Khánh và anh Hải, Ngọc Thụy</p>
+                        </div>
+                    </div>
+                    <div class="relatePosts-list list">
+                        <div class="img">
+                            <img src="images/anh-bia-1-379x760.jpg" alt="">
+                        </div>
+                        <div class="right">
+                        <a href="detail.html">Nhà anh Khánh, Anh Hải-Long Biên (6.25×14.4m)</a>
+                        <p>Xây nhà trọn gói tại quận Long Biên- Anh Khánh và anh Hải, Ngọc Thụy</p>
+                        </div>
+                    </div>
+                    <div class="relatePosts-list list">
+                        <div class="img">
+                            <img src="images/matduong (2).jpg" alt="">
+                        </div>
+                        <div class="right">
+                        <a href="detail.html">Nhà anh Khánh, Anh Hải-Long Biên (6.25×14.4m)</a>
+                        <p>Xây nhà trọn gói tại quận Long Biên- Anh Khánh và anh Hải, Ngọc Thụy</p>
+                        </div>
+                    </div>
+                    <div class="relatePosts-list list">
+                        <div class="img">
+                            <img src="images/nha3tang-01.jpg" alt="">
+                        </div>
+                        <div class="right">
+                        <a href="detail.html">Nhà anh Khánh, Anh Hải-Long Biên (6.25×14.4m)</a>
+                        <p>Xây nhà trọn gói tại quận Long Biên- Anh Khánh và anh Hải, Ngọc Thụy</p>
+                        </div>
+                    </div>
+
+                    <div class="relatePosts-list list">
+                        <div class="img">
+                            <img src="images/nhavuong (2).png" alt="">
+                        </div>
+                        <div class="right">
+                        <a href="detail.html">Nhà anh Khánh, Anh Hải-Long Biên (6.25×14.4m)</a>
+                        <p>Xây nhà trọn gói tại quận Long Biên- Anh Khánh và anh Hải, Ngọc Thụy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="phonering-alo-zalo">
+        <a href="" target="_blank" rel="nofollow" class="echbay-phonering-zalo-event">
+            <img src="images/zalo.png" alt="">    
+        </a>
+    </div>
+    <div class="icon icon-fixed">
+        <img width="40" height="40" src="images/icon-phone.svg" alt="" class="entered lazyloaded">
+        <div class="phone-number">0838.909.468</div>
+    </div>
+    <a id="scrollToTop"></a>
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -130,14 +683,14 @@
                         Thứ hai - Thứ bảy</p>
                     <p>Văn phòng giao dịch tại: số 358 Giải Phóng, Phương Liệt, Thanh Xuân, Hà Nội.</p>
                     <p>Hotline :0838.909.468</p>
-                    <a href="#"><img src="images/footer-mxh-face.svg" alt="facebook"></a>
+                    <a href="detail.html"><img src="images/footer-mxh-face.svg" alt="facebook"></a>
                 </div> 
                 <div class="footer-support col-xl-3 col-md-3 col-sm-3">
                     <span>hỗ trợ khách hàng</span>
                     <ul class="footer-support__list">
-                        <li class="footer-support__list--item"><a href="#">Quy trình làm việc</a></li>
-                        <li class="footer-support__list--item"><a href="#">Khách hàng đánh giá</a></li>
-                        <li class="footer-support__list--item"><a href="#">Chính sách bảo mật</a></li>
+                        <li class="footer-support__list--item"><a href="detail.html">Quy trình làm việc</a></li>
+                        <li class="footer-support__list--item"><a href="detail.html">Khách hàng đánh giá</a></li>
+                        <li class="footer-support__list--item"><a href="detail.html">Chính sách bảo mật</a></li>
                     </ul>
                 </div>
                 <div class="footer-companyLocation col-xl-3 col-md-3 col-sm-3">
@@ -146,7 +699,7 @@
                 </div>
                 <div class="footer-tradeLocation col-xl-3 col-md-3 col-sm-3">
                     <span>văn phòng giao dịch</span>
-                    <img src="images/z3558515945391_c2e83719ce4cf14dacccbc9d78fb1678-370x220.jpg" alt="tradeLocation">
+                    <img src="images/map.jpg" alt="tradeLocation">
                 </div>
             </div>    
             <div class="footer-second">
@@ -166,6 +719,11 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js" ></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" ></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" ></script>
+    <script src="https://kit.fontawesome.com/2872f79842.js" crossorigin="anonymous"></script>
+    <script src="./libraries/aos-master/dist/aos.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+        
+    </script>
 </body>
 </html>

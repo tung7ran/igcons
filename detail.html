@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detail</title>
+    <link rel="icon" type="image/png" sizes="" href="images/logo/cropped-header-logo-32x32.png">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./libraries/aos-master/dist/aos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-main">
+            <div class="container">
+                <div class="header-wrap">
+                    <a href="index.html" class="custom-logo-link" rel="home" aria-current="page">
+                        <img width="756" height="220" src="images/logo/logo.png" class="header-wrap-logo entered lazyloaded">
+                    </a>                    
+                    <div class="header-wrap-search">
+                        <form action="index.html" method="get">
+                            <div class="header-wrap-search-form">
+                                <input type="text" name="s" id="s" required="" class="header-wrap-search-input" placeholder="Nhập từ khóa.... ">
+                                    <button type="submit" class="header-wrap-search-icon">
+                                        <img width="24" height="24" src="images/header-icon-search.svg" alt="" class="icon entered lazyloaded" >
+                                    </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="header-wrap-sample">
+                        <div class="header-wrap-sample-item">
+                                <a class="header-wrap-sample-link">
+                                    <div class="header-wrap-sample-icon">
+                                        <img width="256" height="256" src="images/tin-tuc.png" alt="" class="icon entered lazyloaded">
+                                    </div>
+                                    <p class="header-wrap-sample-text">TIN TỨC THI CÔNG</p>
+                                </a>
+                            </div>
+                                <div class="header-wrap-sample-item">
+                                <a class="header-wrap-sample-link">
+                                    <div class="header-wrap-sample-icon">
+                                        <img width="256" height="256" src="images/icon-line-23.png" alt="">
+                                    </div>
+                                    <p class="header-wrap-sample-text">BÁO GIÁ DỊCH VỤ</p>
+                                </a>
+                            </div>
+                                <div class="header-wrap-sample-item">
+                                <a class="header-wrap-sample-link">
+                                    <div class="header-wrap-sample-icon">
+                                        <img width="40" height="40" src="images/header-sample-3.svg" alt="">
+                                    </div>
+                                    <p class="header-wrap-sample-text">MẪU NHÀ ĐẸP</p>
+                                </a>
+                            </div>
+                            <span class="curved curved-left"></span>
+                            <span class="curved curved-right"></span>
+                    </div>
+                    <div class="mobile-search-icon">
+                        <img width="24" height="24" alt="" class="icon">
+                    </div>
+                    <div class="mobile-search">
+                    <form action="index.html" method="get">
+                            <div class="mobile-search-form">
+                                <input type="text" name="s" id="s" required="" placeholder="Nhập từ khóa.... ">
+                                <button type="submit" class="icon">
+                                    <img width="24" height="24" alt="">
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="burger">
+                        <div class="hamburger" id="hamburger">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header-nav">
+        <div class="header-navbar navbar">
+            <div class="container navbar-container">
+                <div class="menu">
+                    <input type="checkbox" name="" id="" class="checkbox-menu">
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <ul class="header-nav-list menu-items" >
+                        <li class="header-nav-list-menu-item"><a href="index.html" aria-current="page">Trang chủ</a></li>
+                        <li class="header-nav-list-menu-item header-nav-list-dropdown">
+                            <a class="dropdown-trigger">Xây nhà trọn gói</a>
+                            <i class="fas fa-chevron-right"></i>
+                        <ul class="header-nav-item-dropdown-submenu dropdown">
+                            <li class="header-nav-list-menu-item"><a href="rough.html">Xây nhà trọn gói phần thô</a></li>
+                            <li class="header-nav-list-menu-item"><a href="pass.html">Xây nhà trọn gói – Chìa khóa trao tay</a></li>
+                        </ul>
+                        </li>
+                        <li class="header-nav-list-menu-item"><a href="design-consultancy.html">Tư vấn thiết kế</a></li>
+                        <li class="header-nav-list-menu-item header-nav-list-dropdown">
+                            <a class="dropdown-trigger">Dự án tiêu biểu</a>
+                            <i class="fas fa-chevron-right"></i>
+                        <ul class="header-nav-item-dropdown-submenu dropdown">
+                            <li class="header-nav-list-menu-item "><a href="construction.html">IGcons thi công</a></li>
+                            <li class="header-nav-list-menu-item header-nav-list-dropdown header-nav-list-dropdown-son">
+                                <a href="libraries.html" class="dropdown-trigger">Thư viện</a>
+                                <i class="fas fa-chevron-right"></i>
+                            <ul class="header-nav-item-dropdown-submenu-son dropdown dropdown-list">
+                                <li class="header-nav-list-menu-item"><a href="townhouse.html">Mẫu nhà phố đẹp</a></li>
+                                <li class="header-nav-list-menu-item"><a href="furniture.html">Mẫu nội thất đẹp</a></li>
+                                <li class="header-nav-list-menu-item"><a href="four-level house.html">Mẫu nhà cấp 4 đẹp</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                        </li>
+                        <li class="header-nav-list-menu-item"><a href="house-building-manual.html">Cẩm nang xây nhà</a></li>
+                        <li class="header-nav-list-menu-item"><a href="contact.html">Liên hệ</a></li>
+                    </ul>   
+                </div> 
+            </div>
+        </div>
+        <div class="logo">
+            <img src="images/logo/logo.png" alt="" style="width: 150px; height: 45px;">
+        </div>
+    </div>
+    <div class="wrap-body">
+        <div class="detail-banner container" style="margin-top: 10rem;">
+            <img src="images/Cach-tinh-vat-lieu-xay-nha-200x163.jpg" alt="">
+            <div class="advise-banner-posi">
+                <div class="advise-banner-con">
+                    <h4 class="advise-banner-text aos-init aos-animate" data-aos="zoom-out">
+                        Hướng dẫn lập bảng dự trù kinh phí xây nhà tiết kiệm nhất                                
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="manualContent container">
+            <div class="manualContent-post">
+                <div class="dnor-item side-left aos-init aos-animate" data-aos="fade-right">
+                    <div class="advise-block">
+                        <div class="box-date-post">
+                            <img width="15" height="15" src="https://igcons.vn/template/assets/images/regu-lich.png" alt="">
+                            <div class="date-post">
+                                25/08/2022                                
+                            </div>
+                        </div>
+                        <div class="mb-30 mona-content">
+                            <div id="toc_container" class="toc_light_blue no_bullets">
+                                <p class="toc_title">Mục Lục 
+                                    <span class="toc_toggle">
+                                        [<a href="#">Ẩn</a>]
+                                    </span>
+                                </p>
+                                <ul class="toc_list">
+                                    <li>
+                                        <a href="#Tai_sao_ban_nen_lap_bang_du_tru_kinh_phi_xay_nha">
+                                            <span class="toc_number toc_depth_1">1</span> Tại sao bạn nên lập bảng dự trù kinh phí xây nhà ?
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#Nhung_chi_phi_lien_quan_den_viec_du_tru_kinh_phi_xay_nha">
+                                            <span class="toc_number toc_depth_1">2</span> Những chi phí liên quan đến việc dự trù kinh phí xây nhà?
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#Cach_du_tru_kinh_phi_xay_nha_hien_nay">
+                                                <span class="toc_number toc_depth_1">3</span> Cách dự trù kinh phí xây nhà hiện nay
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#Du_tru_kinh_phi_buoc_dau_xay_dung"><span class="toc_number toc_depth_2">3.1</span> Dự trù kinh phí bước đầu xây dựng</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#Du_tru_kinh_phi_trong_qua_trinh_xay_dung">
+                                                        <span class="toc_number toc_depth_2">3.2</span> Dự trù kinh phí trong quá trình xây dựng.</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#Du_tru_kinh_phi_sau_khi_xay_nha"><span class="toc_number toc_depth_2">3.3</span> Dự trù kinh phí sau khi xây nhà.</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#Chi_phi_du_phong_phat_sinh"><span class="toc_number toc_depth_2">3.4</span> Chi phí dự phòng phát sinh.</a>
+                                                    </li>
+                                                </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#Huong_dan_cach_du_tru_kinh_phi_xay_nha_4_tang_1_tum_theo_m2_xay_dung"><span class="toc_number toc_depth_1">4</span> Hướng dẫn cách dự trù kinh phí xây nhà 4 tầng 1 tum theo m2 xây dựng.
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                            <p>Dự trù kinh phí xây dựng là những biện pháp hàng đầu giúp gia chủ không bị rơi vào thế bị động do thiếu hụt tài chính, kinh phí, đảm bảo tiến độ thi công đã đề ra. Để tìm hiểu rõ hơn các chi phí cần thiết cho việc xây nhà mời bạn cùng IGcons tham khảo bài viết sau đây.</p>
+                            <h2><span id="Tai_sao_ban_nen_lap_bang_du_tru_kinh_phi_xay_nha">Tại sao bạn nên lập bảng dự trù kinh phí xây nhà ?</span></h2>
+                            <p>Xây nhà là chuyện lớn trong đời. Dành thời gian để hạch toán chi phí trước khi xây dựng sẽ giúp bạn hiểu rõ hơn về quá trình xây dựng từ đó sẽ thuận lợi hơn trong các phần sau:</p>
+                            <ul><li>Chuẩn bị đủ tiền xây nhà, có kế hoạch dự phòng hợp lý tránh thiếu hụt gây đình trệ tiến độ thi công.</li><li>Chủ động hơn trong các giai đoạn huy động vốn nếu cần thiết</li><li>Hạn chế phát sinh, ít thay đổi và bám sát vào kết hoạch ban đầu</li><li>Quyết định mức đầu tư và quy mô xây dựng.</li><li>Thương thảo đơn giá với nhà thầu xây dựng</li></ul>
+                            <h2><span id="Nhung_chi_phi_lien_quan_den_viec_du_tru_kinh_phi_xay_nha">Những chi phí liên quan đến việc dự trù kinh phí xây nhà?</span></h2>
+                            <p>Xây dựng nhà cửa liên quan đến nhiều hạng mục, trong thời gian dài nên cũng có nhiều khoản chi phí liên quan như:</p>
+                            <ul><li>Chi phí tư vấn – thiết kế xây dựng nhà.</li><li>Chi phí xin giấy phép xây dựng.</li><li>Chi phí xây dựng nhà phần thô.</li><li>Chi phí xây dựng nhà phần hoàn thiện.</li><li>Chi phí trang trí nội – ngoại thất.</li><li>Chi phí hoàn công xây nhà.</li><li>Chi phí phát sinh khác (nếu có)</li></ul>
+                            <h2><span id="Cach_du_tru_kinh_phi_xay_nha_hien_nay">Cách dự trù kinh phí xây nhà hiện nay</span></h2>
+                            <h3><span id="Du_tru_kinh_phi_buoc_dau_xay_dung">Dự trù kinh phí bước đầu xây dựng</span></h3>
+                            <p>Trong giai đoạn chuẩn bị khởi công xây dựng bạn cần chuẩn bị hồ sơ, thủ tục để phục vụ công tác xây dựng sau này. Các chi phí giai đoạn này chủ yếu liên quan đến hồ sơ cấp phép và hồ sơ thiết kế thi công xây dựng, chi phí giải phóng mặt bằng.</p>
+                            <p><strong>Xin cấp giấy phép xây dựng. </strong>Đây là điều kiện tiên quyết trước khi bạn tiến hành xây nhà, cần có sự cho phép của cơ quan quản lý (pháp luật) thì bạn mới có thể tiến hành thi công xây dựng. tùy theo diện tích và quy mô mà việc xin cấp giấy phép xây dựng sẽ dao động từ 100 nghìn đồng đến 30 triệu đồng.</p>
+                            <p><strong>Hồ sơ thiết kế thi công.</strong> Chi phí thực hiện hồ sơ thiết kế thi công được tính bằng tổng diện tích xây dựng nhân với đơn giá thiết kế. thông thường đơn giá thiết kế nhà phố dao động từ 150.000 đồng đến 300.000 đồng trên một mét vuông thiết kế, tùy vào phong cách và quy mô cần thiết kế.</p>
+                            <p><strong>Chi phí giải phóng mặt bằng.</strong> Chi phí này thông thường tính toán cho việc có công trình cũ đang tồn tại trên mảnh đất cần xây dựng. Tùy theo quy mô nhà cũ cần phá dỡ mà chi phí theo đó cũng tăng giảm theo. Phần này cần đơn vị phá dỡ mặt bằng cần khảo sát cụ thể theo quy mô mà báo giá cho chủ đầu tư</p>
+                            <p>Khi bạn lựa chọn sử dụng dịch vụ xây nhà trọn gói của IGcons thì chúng tôi sẽ hỗ trợ việc xin cấp giấy phép miễn phí và đồng thời tặng quý khách hàng bộ hồ sơ thiết kế thi công của công trình.</p>
+                            <h3><span id="Du_tru_kinh_phi_trong_qua_trinh_xay_dung">Dự trù kinh phí trong quá trình xây dựng.</span></h3>
+                            <p>Trên thực tế ngôi nhà xây dựng được chia làm 3 phần: gồm xây dựng thô, xây dựng phần hoàn thiện, nội thất. trong đó xây nhà trọn gói bao gồm cả phần thô và hoàn thiện đang được nhiều chủ nhà quan tâm và sử dụng.</p>
+                            <p>Hiện nay đơn giá xây thô trung bình trên thị trường đang được tính toán vào trung bình khoảng 4.000.000 đồng /m2 và đơn giá xây nhà trọn gói chìa khóa trao tay vào khoảng 7.000.000 đồng/m2.  đơn giá này phụ thuộc nhiều vào quy mô, vị trí công trình cũng như vật tư hoàn thiện vào yêu cầu hoàn thiện của chính chủ nhà.</p>
+                            <p>Công thức tính dự trù chi phí xây dựng = đơn giá x mét vuông xây dựng.</p>
+                            <p>Cụ thể hơn thì quý khách có thể tham khảo bài viết về cách tính mét vuông xây dựng theo đường link sau:</p>
+                            <p>Ngoài ra với những công trình có tầng hầm cần dự trù thêm chi phí biện pháp thi công. Cụ thể ở đây là việc ép cừ thép để thi công phần ngầm được đảm bảo. Chi phí cừ thép phụ thuộc vào chu vi mảnh đất và chiều sâu đào móng. Phần này cần đơn vị có chuyên môn khảo sát và tính toán chi phí phù hợp. Các bạn có thể liên hệ với <a href="tel:+84838909468">hottline</a> của IGcons để các kỹ sư xây dựng giàu chuyên môn tính toán giúp bạn.</p>
+                            <h3><span id="Du_tru_kinh_phi_sau_khi_xay_nha">Dự trù kinh phí sau khi xây nhà.</span></h3>
+                            <p>Sau khi hoàn thành công trình, bạn cần thực hiện nộp thuế hoàn công xây dựng (có một số nơi thu trước khi thi công). Chi phí hoàn công thông thường được tính với đơn giá khoảng 70.000 đ/ m2 xây dựng nhà. Ngoài ra chi phí nội thất cũng cần tính toán cụ thể trước để tránh vượt kinh phí ban đầu đề ra. Trường hợp bạn thuê thiết kế thi công nội thất đồng bộ thì tùy theo bản thiết kế nội thất mà chi phí sẽ dao động từ  150.000.000 đồng đến 300.000.000 đồng cho ngôi nhà.</p>
+                            <h3><span id="Chi_phi_du_phong_phat_sinh">Chi phí dự phòng phát sinh.</span></h3>
+                            <p>Bạn cần dự phòng khoảng 10-20% chi phí dự toán công trình. Khoản này sẽ giúp bạn giải quyết các vấn đề phát sinh ngoài dự kiến như nâng cấp vật tư, làm tiểu cảnh…. </p>
+                            <h2><span id="Huong_dan_cach_du_tru_kinh_phi_xay_nha_4_tang_1_tum_theo_m2_xay_dung">Hướng dẫn cách dự trù kinh phí xây nhà 4 tầng 1 tum theo m2 xây dựng.</span></h2>
+                            <p>Ví dụ bạn đang muốn xây nhựng ngôi nhà 4 tầng 1 tum trên diện tích đất 70 m2, tum thang rộng 20 m2. Tổng diện tích xây dựng  ngôi nhà là: 70 x 4 +20 =300 m2.</p>
+                            <p>Các chi phí cần dự trù trước khi thi công sẽ như sau:</p>
+                            <p>Chi phí xin cấp giấy phép : 30.000.000 đồng (miễn phí hồ sơ nếu sử dụng dịch vụ xây nhà trọn gói của IGcons)</p>
+                            <p>Chi phí hồ sơ thiết kế thi công (kiến trúc, kết cấu, điện nước, 3d phối cảnh): 300 m2x180.000 =54.000.000 đồng (tặng miễn phí hồ sơ nếu sự dụng dịch vụ xây nhà trọn gói của IGcons).</p>
+                            <p>Chi phí ép cọc bê tông gia cố nền đất:  Khoảng 80.000.000 đồng tùy thuộc vào chiều sâu ép cọc bê tông.</p>
+                            <p>Chi phí xây dựng phần thô bao gồm cả đường điện nước ngầm : 300 m2x 4.000.000 đồng=1.200.000.000 đồng.</p>
+                            <p>chi phí xây dựng phần trọn gói chìa khóa trao tay (đã bao gồm phần thô): 300 m2x 7.000.000 đồng =2.100.000.000 đồng.</p>
+                            <p>Dự trù chi phí hoàn thiện nội thất (giường, tủ, bàn ghế, điều hòa, tiểu cảnh…) : 300.000.000 đồng.</p>
+                            <p>Chi phí hoàn công xây dựng: 300 m2x70.000 =21.000.000 đồng.</p>
+                            <p>Vậy tổng chi phí cần dự trù cho việc hoàn thiện ngôi nhà có tổng diện tích 300 m2 quy mô 4 tầng 1 tum là: 2.585.000.000 đồng.</p>
+                            <p>Trên đây là cách tính sơ bộ để quý khách hàng có thể tự dự trù kinh phí chuẩn bị thi công. Việc tính toán cụ thể thì cần đơn vị có chuyên môn trực tiếp khảo sát thực tế công trình kết hợp với bản thiết kế ngôi nhà để lập dự toán chính xác.</p>
+                            <p><span style="background-color:#00d084" class="tadv-background-color">Nếu quý khách vẫn còn những khúc mắc chưa rõ trong quá trình dự trù kinh phí xây nhà hãy liên hệ IGcons để được khảo sát, tư vấn và lên dự trù kinh phí miễn phí nhé</span>. <span style="color:#ff6900" class="tadv-color">hotline: <a href="tel:+84838909468">0838.909.468</a></span></p>
+                            <p>Là đơn vị thi công xây dựng trọn gói uy tín lâu năm ở Hà Nội chúng tôi tự tin vào việc dự trù kinh phí thi công cũng như việc cam kết triển khai thi công xây dựng không phát sinh chi phí. </p>
+                        </div>
+                        <div class="box-date-post">
+                            <img width="15" height="15" src="https://igcons.vn/template/assets/images/regu-lich.png">
+                            <div class="date-post">
+                                25/08/2022                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advise-block">
+                        <div class="text-slider">
+                            <div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                                <div class="swiper-wrapper" id="swiper-wrapper-5c311e4b9ce9b4e7" aria-live="polite">
+                                    <div class="swiper-slide swiper-slide-visible swiper-slide-active" style="width: 233.5px; margin-right: 50px;" role="group" aria-label="1 / 2">
+                                        <a href="https://igcons.vn/mat-do-xay-dung-nha-pho/" class="text fw-7">
+                                                Mật độ xây dựng là gì? Mật độ xây dựng nhà phố tối đa ?                        </a>
+                                        </div>
+                                        <div class="swiper-slide swiper-slide-visible swiper-slide-next" style="width: 233.5px; margin-right: 50px;" role="group" aria-label="2 / 2">
+                                            <a href="https://igcons.vn/cap-nhat-hinh-anh-thi-cong-nha-a-hoang-thanh-hoa/" class="text fw-7">
+                                                [Cập nhật] Hình ảnh thi công nhà a Hoàng – Thanh Hóa                        </a>
+                                        </div>    
+                                    </div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                <a href="https://igcons.vn/mat-do-xay-dung-nha-pho/">
+                                    <div class="text-btn navi-prev">
+                                        <i class="fas fa-angle-left icon"></i>
+                                    </div>
+                                </a>
+                                <a href="https://igcons.vn/cap-nhat-hinh-anh-thi-cong-nha-a-hoang-thanh-hoa/">
+                                    <div class="text-btn navi-next">
+                                        <i class="fas fa-angle-right icon"></i>
+                                    </div>
+                                </a>
+                                </div>
+                        </div>
+                    <div class="advise-block">
+                        <h3 class="heading-line">
+                            Bài viết liên quan                             
+                        </h3>
+                        <div class="advise-list">
+                            <div class="advise-item">
+                                    <a href="https://igcons.vn/quy-trinh-chong-tham-ve-sinh/" class="advise-img">
+                                        <div class="advise-img-pd">
+                                            <img width="200" height="200" src="images/quytrinhchongtham.jpg" class="attachment-200x200 size-200x200 wp-post-image" alt="làm sạch mặt chống thấm">                                            
+                                        </div>
+                                    </a>
+                                    <div class="advise-content">
+                                        <a href="https://igcons.vn/quy-trinh-chong-tham-ve-sinh/" class="advise-name t24">
+                                            Quy trình chống thấm WC được áp dụng thực tế vào công trình                                            </a>
+                                        <p class="advise-des">
+                                            Mục Lục1 Quy trình chống thấm nhà vệ sinh của IGcons:1.1 Bịt cổ ống bằng keo bọt1.2 Chống thấm cổ ống bằng hóa chất1.3 Làm sạch bề mặt bê tông chống thấm1.4 Quét màng chống thấm1.5 Ngâm nước kiểm tra Quy trình chống thấm nhà vệ sinh của IGcons: – Sau khi thợ điện nước […]                                            </p>
+                                            <a href="detail.html" class="manualContent-post-list-items-item-content-button" tabindex="0">
+                                                <div class="manualContent-post-list-items-item-content-button-circle">
+                                                    <svg viewBox="0 0 36 50" class="circular-chart">
+                                                        <path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+                                                            a 15.9155 15.9155 0 0 1 0 31.831
+                                                            a 15.9155 15.9155 0 0 1 0 -31.831">
+                                                        </path>
+                                                        <path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+                                                            a 15.9155 15.9155 0 0 1 0 31.831
+                                                            a 15.9155 15.9155 0 0 1 0 -31.831">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                                <p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết</p>
+                                            </a>
+                                    </div>
+                                </div>
+                                <div class="advise-item">
+                                    <a href="https://igcons.vn/nen-mau-lap-phuong-15x15-cm-de-kiem-tra-mac-be-tong-tang-tum-nha-a-hai/" class="advise-img">
+                                        <div class="advise-img-pd">
+                                            <img width="200" height="200" src="images/nenmaulapphuong.jpg" class="attachment-200x200 size-200x200 wp-post-image" alt="Biên Bản kết quả">                                            
+                                        </div>
+                                    </a>
+                                    <div class="advise-content">
+                                        <a href="https://igcons.vn/nen-mau-lap-phuong-15x15-cm-de-kiem-tra-mac-be-tong-tang-tum-nha-a-hai/" class="advise-name t24">
+                                            Nén mẫu lập phương 15×15 cm để kiểm tra mác bê tông tầng Tum nhà a Hải                                            </a>
+                                        <p class="advise-des">
+                                            Sáng ngày 23/9/2022 Tại phòng thí nghiệm 102 trường chinh với sự chứng kiến của tư vấn giám sát, chủ nhà và cán bộ kỹ thuật IGcons.&nbsp;Các bên đã tiến hành nén mẫu thực nghiệm kiểm tra mác bê tông tầng Tum. Mẫu được tiến hành kiểm tra là tổ 3 mẫu bê tông hình […]                                            </p>
+                                            <a href="detail.html" class="manualContent-post-list-items-item-content-button" tabindex="0">
+                                                <div class="manualContent-post-list-items-item-content-button-circle">
+                                                    <svg viewBox="0 0 36 50" class="circular-chart">
+                                                        <path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+                                                            a 15.9155 15.9155 0 0 1 0 31.831
+                                                            a 15.9155 15.9155 0 0 1 0 -31.831">
+                                                        </path>
+                                                        <path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+                                                            a 15.9155 15.9155 0 0 1 0 31.831
+                                                            a 15.9155 15.9155 0 0 1 0 -31.831">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                                <p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết</p>
+                                            </a>
+                                    </div>
+                                </div>
+                                    <div class="advise-item">
+                                    <a href="https://igcons.vn/cap-nhat-hinh-anh-thi-cong-nha-a-hoang-thanh-hoa/" class="advise-img">
+                                        <div class="advise-img-pd">
+                                            <img width="200" height="200" src="images/thicongnhahoang.jpg" class="attachment-200x200 size-200x200 wp-post-image" alt="">                                            
+                                        </div>
+                                    </a>
+                                    <div class="advise-content">
+                                        <a href="https://igcons.vn/cap-nhat-hinh-anh-thi-cong-nha-a-hoang-thanh-hoa/" class="advise-name t24">
+                                            [Cập nhật] Hình ảnh thi công nhà a Hoàng – Thanh Hóa                                            
+                                        </a>
+                                        <p class="advise-des">
+                                            Hình ành thi công nhà a Hoàng, cập nhật đến ngày 30/8/2022                                            
+                                        </p>
+                                        <a href="detail.html" class="manualContent-post-list-items-item-content-button" tabindex="0">
+                                            <div class="manualContent-post-list-items-item-content-button-circle">
+                                                <svg viewBox="0 0 36 50" class="circular-chart">
+                                                    <path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+                                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                                        a 15.9155 15.9155 0 0 1 0 -31.831">
+                                                    </path>
+                                                    <path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+                                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                                        a 15.9155 15.9155 0 0 1 0 -31.831">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết</p>
+                                        </a>
+                                    </div>
+                                </div>                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="manualContent-sidebarRight">
+                <div class="formSignup">
+                    <h4>
+                        <p>Đăng ký</p>
+                        Xem Bảng Giá
+                    </h4>
+                    <p> Nhập email và số điện thoại, chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất </p>
+                    <div class="form">
+                        <form action="">
+                            <div class="form-item form-item-btw-son">   
+                                <input class="form-item-2 " type="text" placeholder="Emai" required="required"> 
+                            </div>
+                            <div class="form-item form-item-btw-son">               
+                                <input class="form-item-3" type="text" placeholder="Số điên thoại" required="required"> 
+                                <p>+84</p>
+                            </div>
+                            <div class="form-item-5">
+                                <button type="submit" class="form-item-5s" s="">
+                                    <img src="images/evolope.svg" alt="">
+                                    <p class="text">Gửi ngay</p>
+                                </button>
+                                <span class="curved curved-left"></span>
+                                <span class="curved curved-right"></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="relatedPosts">
+                    <h4 class="heading-line">IGCONS đang thi công</h4>
+                    <div class="relatePosts-list list">
+                        <div class="img">
+                            <img src="images/anh-bia-1-379x760.jpg" alt="">
+                        </div>
+                        <div class="right">
+                        <a href="#">Nhà anh Khánh, Anh Hải-Long Biên (6.25×14.4m)</a>
+                        <p>Xây nhà trọn gói tại quận Long Biên- Anh Khánh và anh Hải, Ngọc Thụy</p>
+                        </div>
+                    </div>
+                    <div class="relatePosts-list list">
+                        <div class="img">
+                            <img src="images/anh-bia-2-370x260.jpg" alt="">
+                        </div>
+                        <div class="right">
+                        <a href="#">Nhà anh Khánh, Anh Hải-Long Biên (6.25×14.4m)</a>
+                        <p>Xây nhà trọn gói tại quận Long Biên- Anh Khánh và anh Hải, Ngọc Thụy</p>
+                        </div>
+                    </div>
+                    <div class="relatePosts-list list">
+                        <div class="img">
+                            <img src="images/anh-bia-1-379x760.jpg" alt="">
+                        </div>
+                        <div class="right">
+                        <a href="#">Nhà anh Khánh, Anh Hải-Long Biên (6.25×14.4m)</a>
+                        <p>Xây nhà trọn gói tại quận Long Biên- Anh Khánh và anh Hải, Ngọc Thụy</p>
+                        </div>
+                    </div>
+                    <div class="relatePosts-list list">
+                        <div class="img">
+                            <img src="images/matduong (2).jpg" alt="">
+                        </div>
+                        <div class="right">
+                        <a href="#">Nhà anh Khánh, Anh Hải-Long Biên (6.25×14.4m)</a>
+                        <p>Xây nhà trọn gói tại quận Long Biên- Anh Khánh và anh Hải, Ngọc Thụy</p>
+                        </div>
+                    </div>
+                    <div class="relatePosts-list list">
+                        <div class="img">
+                            <img src="images/nha3tang-01.jpg" alt="">
+                        </div>
+                        <div class="right">
+                        <a href="#">Nhà anh Khánh, Anh Hải-Long Biên (6.25×14.4m)</a>
+                        <p>Xây nhà trọn gói tại quận Long Biên- Anh Khánh và anh Hải, Ngọc Thụy</p>
+                        </div>
+                    </div>
+
+                    <div class="relatePosts-list list">
+                        <div class="img">
+                            <img src="images/nhavuong (2).png" alt="">
+                        </div>
+                        <div class="right">
+                        <a href="#">Nhà anh Khánh, Anh Hải-Long Biên (6.25×14.4m)</a>
+                        <p>Xây nhà trọn gói tại quận Long Biên- Anh Khánh và anh Hải, Ngọc Thụy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="phonering-alo-zalo">
+        <a href="" target="_blank" rel="nofollow" class="echbay-phonering-zalo-event">
+            <img src="images/zalo.png" alt="">    
+        </a>
+    </div>
+    <div class="icon icon-fixed">
+        <img width="40" height="40" src="images/icon-phone.svg" alt="" class="entered lazyloaded">
+        <div class="phone-number">0838.909.468</div>
+    </div>
+    <a id="scrollToTop"></a>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-about col-xl-3 col-md-3 col-sm-3 ">
+                    <div class="footer-about-image">
+                        <img src="images/logo/footer-logo.png" alt="">
+                    </div>
+                    <p>Công ty TNHH đầu tư xây dựng IGcons</p>
+                    <p>Giờ làm việc: 09:00 am - 05:00 pm
+                        Thứ hai - Thứ bảy</p>
+                    <p>Văn phòng giao dịch tại: số 358 Giải Phóng, Phương Liệt, Thanh Xuân, Hà Nội.</p>
+                    <p>Hotline :0838.909.468</p>
+                    <a href="#"><img src="images/footer-mxh-face.svg" alt="facebook"></a>
+                </div> 
+                <div class="footer-support col-xl-3 col-md-3 col-sm-3">
+                    <span>hỗ trợ khách hàng</span>
+                    <ul class="footer-support__list">
+                        <li class="footer-support__list--item"><a href="#">Quy trình làm việc</a></li>
+                        <li class="footer-support__list--item"><a href="#">Khách hàng đánh giá</a></li>
+                        <li class="footer-support__list--item"><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="footer-companyLocation col-xl-3 col-md-3 col-sm-3">
+                    <span>văn phòng công ty</span>
+                    <img src="images/orther-img-1-370x220.png" alt="companyLocation">
+                </div>
+                <div class="footer-tradeLocation col-xl-3 col-md-3 col-sm-3">
+                    <span>văn phòng giao dịch</span>
+                    <img src="images/map.jpg" alt="tradeLocation">
+                </div>
+            </div>    
+            <div class="footer-second">
+                <div class="footer-second-item">
+                    <div class="footer-second-item-image">
+                        <img src="images/dmca_protected_sml_120m.png" alt="">
+                    </div>
+                        <p>Công ty TNHH đầu tư xây dựng IGcons</p>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js" ></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" ></script>
+    <script src="https://kit.fontawesome.com/2872f79842.js" crossorigin="anonymous"></script>
+    <script src="./libraries/aos-master/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>

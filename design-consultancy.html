@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chủ</title>
+    <title>Tư vấn thiết kế</title>
     <link rel="icon" type="image/png" sizes="" href="images/logo/cropped-header-logo-32x32.png">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
           integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./sass/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="./libraries/aos-master/dist/aos.css">
 </head>
 <body>
     <header class="header">
@@ -83,41 +84,891 @@
         </div>
     </header>
     <div class="header-nav">
-        <div class="container">
-            <ul class="header-nav-list">
-                <li class="header-nav-list-menu-item"><a href="index.html" aria-current="page">Trang chủ</a></li>
-                <li class="header-nav-list-menu-item header-nav-list-dropdown">
-                    <a href="#" class="dropdown-trigger">Xây nhà trọn gói</a>
-                    <i class="fas fa-chevron-right"></i>
-                <ul class="header-nav-item-dropdown-submenu dropdown">
-                    <li class="header-nav-list-menu-item"><a href="rough.html">Xây nhà trọn gói phần thô</a></li>
-                    <li class="header-nav-list-menu-item"><a href="pass.html">Xây nhà trọn gói – Chìa khóa trao tay</a></li>
-                </ul>
-                </li>
-                <li class="header-nav-list-menu-item"><a href="design-consultancy.html"  class="active">Tư vấn thiết kế</a></li>
-                <li class="header-nav-list-menu-item header-nav-list-dropdown">
-                    <a href="#" class="dropdown-trigger">Dự án tiêu biểu</a>
-                    <i class="fas fa-chevron-right"></i>
-                <ul class="header-nav-item-dropdown-submenu dropdown">
-                    <li class="header-nav-list-menu-item "><a href="construction.html">IGcons thi công</a></li>
-                    <li class="header-nav-list-menu-item header-nav-list-dropdown header-nav-list-dropdown-son">
-                        <a href="libraries.html" class="dropdown-trigger">Thư viện</a>
-                        <i class="fas fa-chevron-right"></i>
-                    <ul class="header-nav-item-dropdown-submenu-son dropdown dropdown-list">
-                        <li class="header-nav-list-menu-item"><a href="#">Mẫu nhà phố đẹp</a></li>
-                        <li class="header-nav-list-menu-item"><a href="#">Mẫu nội thất đẹp</a></li>
-                        <li class="header-nav-list-menu-item"><a href="#">Mẫu nhà cấp 4 đẹp</a></li>
-                    </ul>
-                </li>
-                </ul>
-                </li>
-                <li class="header-nav-list-menu-item"><a href="house-building-manual.html">Cẩm nang xây nhà</a></li>
-                <li class="header-nav-list-menu-item"><a href="contact.html">Liên hệ</a></li>
-            </ul>            
+        <div class="header-navbar navbar">
+            <div class="container navbar-container">
+                <div class="menu">
+                    <input type="checkbox" name="" id="" class="checkbox-menu">
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <ul class="header-nav-list menu-items" >
+                        <li class="header-nav-list-menu-item"><a href="index.html" aria-current="page" >Trang chủ</a></li>
+                        <li class="header-nav-list-menu-item header-nav-list-dropdown">
+                            <a class="dropdown-trigger">Xây nhà trọn gói</a>
+                            <i class="fas fa-chevron-right"></i>
+                        <ul class="header-nav-item-dropdown-submenu dropdown">
+                            <li class="header-nav-list-menu-item"><a href="rough.html">Xây nhà trọn gói phần thô</a></li>
+                            <li class="header-nav-list-menu-item"><a href="pass.html">Xây nhà trọn gói – Chìa khóa trao tay</a></li>
+                        </ul>
+                        </li>
+                        <li class="header-nav-list-menu-item"><a href="design-consultancy.html" class="active">Tư vấn thiết kế</a></li>
+                        <li class="header-nav-list-menu-item header-nav-list-dropdown">
+                            <a class="dropdown-trigger">Dự án tiêu biểu</a>
+                            <i class="fas fa-chevron-right"></i>
+                        <ul class="header-nav-item-dropdown-submenu dropdown">
+                            <li class="header-nav-list-menu-item "><a href="construction.html">IGcons thi công</a></li>
+                            <li class="header-nav-list-menu-item header-nav-list-dropdown header-nav-list-dropdown-son">
+                                <a href="libraries.html" class="dropdown-trigger">Thư viện</a>
+                                <i class="fas fa-chevron-right"></i>
+                            <ul class="header-nav-item-dropdown-submenu-son dropdown dropdown-list">
+                                <li class="header-nav-list-menu-item"><a href="townhouse.html">Mẫu nhà phố đẹp</a></li>
+                                <li class="header-nav-list-menu-item"><a href="furniture.html">Mẫu nội thất đẹp</a></li>
+                                <li class="header-nav-list-menu-item"><a href="four-level house.html">Mẫu nhà cấp 4 đẹp</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                        </li>
+                        <li class="header-nav-list-menu-item"><a href="house-building-manual.html">Cẩm nang xây nhà</a></li>
+                        <li class="header-nav-list-menu-item"><a href="contact.html">Liên hệ</a></li>
+                    </ul>   
+                </div> 
+            </div>
+        </div>
+        <div class="logo">
+            <img src="images/logo/logo.png" alt="" style="width: 150px; height: 45px;">
         </div>
     </div>
-    <div class="wrap-body">
+    <div class="wrap-body design">
+        <section class="cons-banner">
+            <div class="banner">
+                <div class="banner-img">
+                    <img width="1276" height="624" class="destop-image-home wp-post-image entered lazyloaded" alt="" src="images/dobetong2.jpeg" >
+                    <div class="banner-content">
+                        <div class="banner-content-wrap">
+                            <h2 class="banner-content-text">
+                                Xây nhà trọn gói phần thô   
+                            </h2>
+                            <div class="skew">
+                                <span class="curved curved-right"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cons-reason">
+            <div class="reason">
+                <div class="container">
+                    <div class="dnor reason-side">
+                        <div class="dnor-item reason-right aos-init aos-animate" data-aos="fade-left" data-aos-duration="1600">
+                            <div class="dnor reason-list-item">
+                                <div class="dnor-item reason-item ">
+                                    <div class="reason-wrap">
+                                        <div class="reason-icon">
+                                            <img width="56" height="56" src="images/idea-icon-1.svg" class="icon entered" alt=""></div>
+                                        <div class="reason-content">
+                                            <h4 class="reason-name">Đội ngũ chuyên nghiệp</h4>
+                                            <p class="reason-des">
+                                                Với đội ngũ nhiều năm kinh nghiệm luôn lắng nghe, học hỏi, cập nhật công nghệ thi công tân tiến nhất hiện nay. 100% nhân viên IGcons tốt nghiệp ĐHXD
+                                            <p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dnor-item reason-item">
+                                    <div class="reason-wrap">
+                                        <div class="reason-icon">
+                                            <img width="56" height="56" src="images/idea-icon-2.svg" class="icon entered" alt=""></div>
+                                        <div class="reason-content">
+                                            <h4 class="reason-name">Quy trình nghiêm ngặt</h4>
+                                            <p class="reason-des">
+                                                Các bước kiểm tra, nghiệm thu công việc xây dựng được hệ thống quy chuẩn hóa trong công ty để đảm bảo chất lượng công trình đạt mức cao nhất. 99% khách hàng hài lòng là câu trả lời cho quy trình thi công của chúng tôi
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dnor-item reason-item idea-img-3">
+                                    <div class="image">
+                                        <img src="images/idea-img-3-1.png" alt="">
+                                    </div>
+                                    <div class="reason-wrap">
+                                        <div class="reason-icon">
+                                            <img width="56" height="56" src="images/idea-icon-1.svg" class="icon entered" alt=""></div>
+                                        <div class="reason-content">
+                                            <h4 class="reason-name">Đội ngũ chuyên nghiệp</h4>
+                                            <p class="reason-des">
+                                                Với sự đa dạng về hình dáng và kích thước nhà ở, yếu tố đề cao công năng trong bản vẽ thiết kế sẽ đặt ra rất nhiều thách thức thú vị cho đội ngũ KTS. Nhưng chính kinh nghiệm thực tiễn và những ý tưởng sáng tạo đột phá tại IGcons sẽ mang lại cho bạn các phương án hoàn hảo về thẩm mỹ – hoàn thiện về công năng – tối ưu về chi phí.
+                                            <p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dnor-item reason-item-slide">
+                                <div class="reason-list">
+                                    <img src="images/idea-img-1.png" alt="">
+                                </div>
+                                <div class="reason-list">
+                                    <img src="images/idea-img-2.png" alt="">
+                                </div>
+                                <div class="reason-list">
+                                    <img src="images/idea-img-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cons-as">
+            <div class="as ss-pd">
+                <div class="container">
+                    <div class="dnor as-list">
+                            <div class="dnor-item as-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
+                                <div class="as-wrap">
+                                    <div class="as-icon">
+                                        <img width="56" height="56" src="images/as-icon-1.svg" class="icon entered lazyloaded" alt=""></div>
+                                    <p class="as-number">8+</p>
+                                    <p class="as-des">NĂM KINH NGHIỆM</p>
+                                </div>
+                            </div>
+                            <div class="dnor-item as-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
+                                <div class="as-wrap">
+                                    <div class="as-icon">
+                                        <img width="56" height="56" src="images/as-icon-2.svg" class="icon entered lazyloaded" alt="" ></div>
+                                    <p class="as-number">1368+</p>
+                                    <p class="as-des">KHÁCH HÀNG</p>
+                                </div>
+                            </div>
+                            <div class="dnor-item as-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1200">
+                                <div class="as-wrap">
+                                    <div class="as-icon">
+                                        <img width="56" height="56" src="images/as-icon-3.svg" class="icon entered lazyloaded" alt=""></div>
+                                    <p class="as-number">100+</p>
+                                    <p class="as-des">THIẾT KẾ</p>
+                                </div>
+                            </div>
+                            <div class="dnor-item as-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1200">
+                                <div class="as-wrap">
+                                    <div class="as-icon">
+                                        <img width="56" height="56" src="images/as-icon-4.svg" class="icon entered lazyloaded" alt=""></div>
+                                    <p class="as-number">150+</p>
+                                    <p class="as-des">DỰ ÁN THI CÔNG</p>
+                                </div>
+                            </div>
+                            <div class="dnor-item as-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1200">
+                                <div class="as-wrap">
+                                    <div class="as-icon">
+                                        <img width="56" height="56" src="https://igcons.vn/wp-content/uploads/2022/05/as-icon-5.svg" class="icon entered lazyloaded" alt=""></div>
+                                    <p class="as-number">99%</p>
+                                    <p class="as-des">HÀI LÒNG</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="cons-process">
+            <div class="process ss-pd">
+                <div class="container">
+                    <div class="process-head">
+                        <h2 class="t-heading aos-init aos-animate" data-aos="flip-up">Quy trình báo giá của IGCONS</h2>
+                    </div>
+                    <div class="process-slider">
+                        <div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                            <div class="swiper-wrapper" id="swiper-wrapper-4eea72ac6a101c1d1" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
+                                <button class="swiper-slide aos-init swiper-slide-visible swiper-slide-active aos-animate " data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200" style="width: 210px; margin-right: 30px;" role="group" aria-label="1 / 5" onclick="consProcess('consProcess1')"  >
+                                        <div class="process-item " data-id="1" >
+                                            <div class="process-box ">
+                                                <div class="process-icon">
+                                                    <img width="56" height="56" src="images/file-1.png" class="icon entered lazyloaded" alt=""></div>
+                                            </div>
+                                            <p class="process-name">1. Đặt lịch hẹn</p>
+                                            <a href="javascript:;" class="button m-mid">
+                                                <div class="button-circle">
+                                                    <svg viewBox="0 0 36 50" class="circular-chart">
+                                                        <path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+                                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                                        a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                                                        <path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+                                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                                        a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                                                    </svg>
+                                                </div>
+                                                <p class="button-text">Xem thêm</p>
+                                            </a>
+                                        </div>
+                                    </button>
+                                <button class="swiper-slide aos-init swiper-slide-visible swiper-slide-next aos-animate" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300" style="width: 210px; margin-right: 30px;" role="group" aria-label="2 / 5" onclick="consProcess('consProcess2')">
+                                        <div class="process-item " data-id="2" >
+                                            <div class="process-box">
+                                                <div class="process-icon">
+                                                    <img width="56" height="56" src="images/search-1.png" class="icon entered lazyloaded" alt=""></div>
+                                            </div>
+                                            <p class="process-name">2. Tư vấn trực tiếp</p>
+
+                                            <a href="javascript:;" class="button m-mid">
+                                                <div class="button-circle">
+                                                    <svg viewBox="0 0 36 50" class="circular-chart">
+                                                        <path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+                                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                                        a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                                                        <path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+                                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                                        a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                                                    </svg>
+                                                </div>
+                                                <p class="button-text">Xem thêm</p>
+                                            </a>
+                                        </div>
+                                    </button>
+                                <button class="swiper-slide aos-init swiper-slide-visible aos-animate" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400" style="width: 210px; margin-right: 30px;" role="group" aria-label="3 / 5" onclick="consProcess('consProcess3')">
+                                        <div class="process-item " data-id="3">
+                                            <div class="process-box">
+                                                <div class="process-icon">
+                                                    <img width="56" height="56" src="images/contract-1.png" class="icon entered lazyloaded" alt="" ></div>
+                                            </div>
+                                            <p class="process-name">3. Thiết kế và lập dự toán</p>
+
+                                            <a href="javascript:;" class="button m-mid">
+                                                <div class="button-circle">
+                                                    <svg viewBox="0 0 36 50" class="circular-chart">
+                                                        <path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+                                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                                        a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                                                        <path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+                                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                                        a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                                                    </svg>
+                                                </div>
+                                                <p class="button-text">Xem thêm</p>
+                                            </a>
+                                        </div>
+                                    </button>
+                                <button class="swiper-slide aos-init swiper-slide-visible aos-animate" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="500" style="width: 210px; margin-right: 30px;" role="group" aria-label="4 / 5" onclick="consProcess('consProcess4')">
+                                        <div class="process-item " data-id="4">
+                                            <div class="process-box">
+                                                <div class="process-icon">
+                                                    <img width="56" height="56" src="images/cad-1.png" class="icon entered lazyloaded" alt="" ></div>
+                                            </div>
+                                            <p class="process-name">4. Thảo luận &amp; điều chỉnh</p>
+
+                                            <a href="javascript:;" class="button m-mid">
+                                                <div class="button-circle">
+                                                    <svg viewBox="0 0 36 50" class="circular-chart">
+                                                        <path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+                                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                                        a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                                                        <path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+                                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                                        a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                                                    </svg>
+                                                </div>
+                                                <p class="button-text">Xem thêm</p>
+                                            </a>
+                                        </div>
+                                    </button>
+                                <button class="swiper-slide aos-init swiper-slide-visible aos-animate" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="600" style="width: 210px; margin-right: 30px;" role="group" aria-label="5 / 5" onclick="consProcess('consProcess5')">
+                                        <div class="process-item " data-id="5">
+                                            <div class="process-box">
+                                                <div class="process-icon">
+                                                    <img width="56" height="56" src="images/document-1.png" class="icon entered lazyloaded" alt="" ></div>
+                                            </div>
+                                            <p class="process-name">5. Kí hợp đồng</p>
+
+                                            <a href="javascript:;" class="button m-mid">
+                                                <div class="button-circle">
+                                                    <svg viewBox="0 0 36 50" class="circular-chart">
+                                                        <path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+                                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                                        a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                                                        <path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+                                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                                        a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                                                    </svg>
+                                                </div>
+                                                <p class="button-text">Xem thêm</p>
+                                            </a>
+                                        </div>
+                                    </button>
+                                </div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                    </div>
+
+                    <div class="process-line"></div>
+                </div>
+                    <div class="box-desc-procedure" data-box="1" id="consProcess1" style="display: none;">
+                        <div class="box-desc-procedure-item container">
+                            <div class="box-desc-procedure-item-info mona-content">
+                                <p>Khách hàng gọi tới hotline : 0838.909.468 để trình bày về nhu cầu thiết kế, xây dựng và hẹn lịch tư vấn trực tiếp với nhân viên của IGcons.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-desc-procedure" data-box="2" id="consProcess2" style="display: none;">
+                        <div class="box-desc-procedure-item container">
+                            <div class="box-desc-procedure-item-info mona-content">
+                                <p>Các KS và KTS phụ trách sẽ qua trực tiếp công trình để đánh giá hiện trạng mặt bằng thi công. Thảo luận với chủ đầu tư về phương án thiết kế , chủng loại vật tư, tiến độ công trình, điều kiện thanh toán, cũng như giải đáp toàn bộ thông tin thắc mắc về quá trình xây dựng.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-desc-procedure" data-box="3" id="consProcess3" style="display: none;">
+                        <div class="box-desc-procedure-item container">
+                            <div class="box-desc-procedure-item-info mona-content">
+                                <p>IGcons sẽ lập bản vẽ mặt bằng thiết kế sơ bộ bám sát yêu cầu mà chủ đầu tư đưa ra kèm dự toán chào giá theo mặt bằng được lập. Công ty sẽ chuyển dự toán, bản vẽ sơ bộ, mẫu hợp đồng cho khách hàng tham khảo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-desc-procedure" data-box="4" id="consProcess4" style="display: none;">
+                        <div class="box-desc-procedure-item container">
+                            <div class="box-desc-procedure-item-info mona-content">
+                                <p>Khách hàng xem và có những phản hồi về bản vẽ, dự toán thi công. IGcons tiếp thu điều chỉnh để hai bên đi đến thống nhất chung về hồ sơ.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-desc-procedure" data-box="5" id="consProcess5" style="display: none;">
+                        <div class="box-desc-procedure-item container">
+                            <div class="box-desc-procedure-item-info mona-content">
+                                <p>Hai bên thỏa thuận cụ thể về thời gian thi công, trách nhiệm các bên liên quan, tiến độ thanh toán… Ký hợp đồng và ấn định ngày khởi công.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section>
+            <div class="construction home-project container aos-init aos-animate" data-aos="fade-up">
+                <div class="construction-item-top ">
+                    <div class="construction-item-top-content">
+                        <h4>Công trình<br> thi công <span>Trọn gói</span></h4>
+                        <p>IGcons một trong những công ty xây dựng uy tín hàng đầu tại Hà Nội, với hơn 8 năm kinh nghiệm trong xây dựng dân dụng nhà ở.</p>
+                        <a href="#" class="manualContent-post-list-items-item-content-button">
+                            <div class="manualContent-post-list-items-item-content-button-circle">
+                                <svg viewBox="0 0 36 50" class="circular-chart">
+                                    <path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831">
+                                    </path>
+                                    <path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831">
+                                    </path>
+                                </svg>
+                            </div>
+                            <p class="manualContent-post-list-items-item-content-button-text">Xem chi tiết dịch vụ</p>
+                        </a>
+                    </div>
+                    <div class="construction-item-top-right">
+                        <div class="construction-list__item">
+                            <div class="construction-list__item--image">
+                                <img src="images/anh-bia-2-775x379.jpg" alt="">
+                            </div>
+                            <div class="construction-list__item--content overlay">
+                                <div class="overlay-item">
+                                    <h4>Nhà anh Khánh, Anh Hải-Long Biên (6.25×14.4m)</h4>
+                                    <p>Xây nhà trọn gói tại quận Long Biên – Nhà anh Thái, Nguyễn Văn Cừ, Long Biên, Hà Nội...</p>
+                                </div>
+                                <div class="btn-esp-line project-btn overlay-item">
+                                    <a href="#" class="btn-esp m-right">
+                                        <p class="btn-esp-text">Xem thêm</p>
+                                        <span class="curved curved-left"></span>
+                                        <span class="curved curved-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="construction-item-second container">
+                    <div class="construction-list__item">
+                        <div class="construction-list__item--image">
+                            <img src="images/nha3tang-01.jpg" alt="">
+                        </div>
+                        <div class="construction-list__item--content overlay">
+                            <div class="overlay-item">
+                                <h4>Nhà anh Khánh, Anh Hải-Long Biên (6.25×14.4m)</h4>
+                                <p>Xây nhà trọn gói tại quận Long Biên – Nhà anh Thái, Nguyễn Văn Cừ, Long Biên, Hà Nội...</p>
+                            </div>
+                            <div class="btn-esp-line project-btn overlay-item">
+                                <a href="#" class="btn-esp m-right">
+                                    <p class="btn-esp-text">Xem thêm</p>
+                                    <span class="curved curved-left"></span>
+                                    <span class="curved curved-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="construction-list__item">
+                        <div class="construction-list__item--image">
+                            <img src="images/matduong (4).jpg" alt="">
+                        </div>
+                        <div class="construction-list__item--content overlay">
+                            <div class="overlay-item">
+                                <h4>Nhà anh Khánh, Anh Hải-Long Biên (6.25×14.4m)</h4>
+                                <p>Xây nhà trọn gói tại quận Long Biên – Nhà anh Thái, Nguyễn Văn Cừ, Long Biên, Hà Nội...</p>
+                            </div>
+                            <div class="btn-esp-line project-btn overlay-item">
+                                <a href="#" class="btn-esp m-right">
+                                    <p class="btn-esp-text">Xem thêm</p>
+                                    <span class="curved curved-left"></span>
+                                    <span class="curved curved-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="construction-list__item">
+                        <div class="construction-list__item--image">
+                            <img src="images/anh-bia-1-379x760.jpg" alt="">
+                        </div>
+                        <div class="construction-list__item--content overlay">
+                            <div class="overlay-item">
+                                <h4>Nhà anh Khánh, Anh Hải-Long Biên (6.25×14.4m)</h4>
+                                <p>Xây nhà trọn gói tại quận Long Biên – Nhà anh Thái, Nguyễn Văn Cừ, Long Biên, Hà Nội...</p>
+                            </div>
+                            <div class="btn-esp-line project-btn overlay-item">
+                                <a href="#" class="btn-esp m-right">
+                                    <p class="btn-esp-text">Xem thêm</p>
+                                    <span class="curved curved-left"></span>
+                                    <span class="curved curved-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="construction-list__item">
+                        <div class="construction-list__item--image">
+                            <img src="images/caynha-02.jpg" alt="">
+                        </div>
+                        <div class="construction-list__item--content overlay">
+                            <div class="overlay-item">
+                                <h4>Nhà anh Khánh, Anh Hải-Long Biên (6.25×14.4m)</h4>
+                                <p>Xây nhà trọn gói tại quận Long Biên – Nhà anh Thái, Nguyễn Văn Cừ, Long Biên, Hà Nội...</p>
+                            </div>
+                            <div class="btn-esp-line project-btn overlay-item">
+                                <a href="#" class="btn-esp m-right">
+                                    <p class="btn-esp-text">Xem thêm</p>
+                                    <span class="curved curved-left"></span>
+                                    <span class="curved curved-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <div class="priceList container">
+                <h4>Bảng giá các gói tư vấn thiết kế</h4>
+                <div class="priceList-list row">
+                    <div class="priceList-list-item col-md-4 col-sm-4 col-xl-4">
+                        <img src="images/goituvan.png" alt="">
+                    </div>
+                    <div class="priceList-list-item col-md-4 col-sm-4 col-xl-4">
+                        <img src="images/goituvan2.png" alt="">
+                    </div>
+                    <div class="priceList-list-item col-md-4 col-sm-4 col-xl-4">
+                        <img src="images/goituvan3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="construction-fix">
+            <div class="construction-item-third">
+                <div class="home-we">
+                    <div class="we-head-text mona-content aos-init aos-animate" data-aos="fade-down">
+                        <p><span style="color: #cccfda;">WE ARE&nbsp;<strong>IG</strong>CONS</span></p>
+                    </div>
+                </div>
+                <div class="manualContent-sidebarRight">
+                    <div class="container">
+                        <div class="formSignup aos-init aos-animate" data-aos="fade-up">
+                            <h4>
+                                <span>Đăng ký</span>
+                                Xem Bảng Giá
+                            </h4>
+                            <p> Nhập email và số điện thoại, chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất </p>
+                            <div class="form">
+                                <form action="">
+                                    <div class="form-item form-item-btw-son">   
+                                        <input class="form-item-2 " type="text" placeholder="Emai" required="required"> 
+                                        <div class="form-item-btw-son">               
+                                            <input class="form-item-3" type="text" placeholder="Số điên thoại" required="required"> 
+                                            <p>+84</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-item-5">
+                                        <button type="submit" class="form-item-5s" s="">
+                                            <img src="images/evolope.svg" alt="">
+                                            <p class="text">Gửi ngay</p>
+                                        </button>
+                                        <span class="curved curved-left"></span>
+                                        <span class="curved curved-right"></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-home-fix">
+            <div class="content-home">
+                <div class="homeBanner">
+                    <div class="homeBanner-item">
+                        <div class="homeBanner-item-image">
+                            <img src="images/phongkhach.jpg" alt="">
+                        </div>
+                        <div class="dv-posi">
+                            <div class="btn-esp-line project-btn">
+                                <div class="btn-esp m-mid">
+                                    <p class="btn-esp-text">
+                                        Vật tư phần thô  
+                                    </p>
+                                    <span class="curved curved-left"></span>
+                                    <span class="curved curved-right"></span>
+                                </div>
+                            </div>
+                            <div class="dv-wrap">
+                                <div class="dv-con">
+                                    <div class="dnor dv-side">
+                                        <div class="dnor-item dv-left">
+                                            <h3 class="t-heading white m-small">
+                                                Thiết kế nội thất nhà a Thái Long Biên                                                                      
+                                            </h3>
+                                            <div class="dv-left-content">
+                                                <div class="dv-left-list">
+                                                    <p class="dv-text">
+                                                        <span class="fw-7">Tên công trình:</span>anh Thái                                                                                   
+                                                    </p>
+                                                    <p class="dv-text">
+                                                        <span class="fw-7">Địa điểm:</span>Long Biên                                                                                   
+                                                    </p>
+                                                    <p class="dv-text">
+                                                        <span class="fw-7">Hạng mục:</span>Nội Thất                                                                                    
+                                                    </p>                                                         
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dnor-item dv-right">
+                                            <div class="dv-right-content">
+                                                <h4 class="dv-right-title">
+                                                    Nhận thi công                                                                            
+                                                </h4>
+                                                <div class="dnor dv-right-list">
+                                                    <div class="dnor-item dv-right-item">
+                                                        <div class="dv-text fw-7 link">
+                                                            <img width="16" height="16" src="images/dv-icon-plus.svg" alt="" class="icon entered lazyloaded">Nhà phố                                                                                        
+                                                        </div>
+                                                        <div class="dv-text fw-7 link">
+                                                            <img width="16" height="16" src="images/dv-icon-plus.svg" alt="" class="icon entered lazyloaded" > Biệt thự                                                                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="manualContent-post-list-items-item-content-button">
+                                                    <div class="manualContent-post-list-items-item-content-button-circle">
+                                                        <svg viewBox="0 0 36 50" class="circular-chart">
+                                                            <path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+                                                                a 15.9155 15.9155 0 0 1 0 31.831
+                                                                a 15.9155 15.9155 0 0 1 0 -31.831">
+                                                            </path>
+                                                            <path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+                                                                a 15.9155 15.9155 0 0 1 0 31.831
+                                                                a 15.9155 15.9155 0 0 1 0 -31.831">
+                                                            </path>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="manualContent-post-list-items-item-content-button-text">Xem thêm</p>
+                                                </a>                       
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="homeBanner-item">
+                        <div class="homeBanner-item-image">
+                            <img src="images/phongkhack2.jpg" alt="">
+                        </div>
+                        <div class="dv-posi">
+                            <div class="btn-esp-line project-btn">
+                                <div class="btn-esp m-mid">
+                                    <p class="btn-esp-text">
+                                        Vật tư phần thô  
+                                    </p>
+                                    <span class="curved curved-left"></span>
+                                    <span class="curved curved-right"></span>
+                                </div>
+                            </div>
+                            <div class="dv-wrap">
+                                <div class="dv-con">
+                                    <div class="dnor dv-side">
+                                        <div class="dnor-item dv-left">
+                                            <h3 class="t-heading white m-small">
+                                                Thiết kế nội thất nhà a Thái Long Biên                                                                      
+                                            </h3>
+                                            <div class="dv-left-content">
+                                                <div class="dv-left-list">
+                                                    <p class="dv-text">
+                                                        <span class="fw-7">Tên công trình:</span>anh Thái                                                                                   
+                                                    </p>
+                                                    <p class="dv-text">
+                                                        <span class="fw-7">Địa điểm:</span>Long Biên                                                                                   
+                                                    </p>
+                                                    <p class="dv-text">
+                                                        <span class="fw-7">Hạng mục:</span>Nội Thất                                                                                    
+                                                    </p>                                                         
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dnor-item dv-right">
+                                            <div class="dv-right-content">
+                                                <h4 class="dv-right-title">
+                                                    Nhận thi công                                                                            
+                                                </h4>
+                                                <div class="dnor dv-right-list">
+                                                    <div class="dnor-item dv-right-item">
+                                                        <div class="dv-text fw-7 link">
+                                                            <img width="16" height="16" src="images/dv-icon-plus.svg" alt="" class="icon entered lazyloaded">Nhà phố                                                                                        
+                                                        </div>
+                                                        <div class="dv-text fw-7 link">
+                                                            <img width="16" height="16" src="images/dv-icon-plus.svg" alt="" class="icon entered lazyloaded" > Biệt thự                                                                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="manualContent-post-list-items-item-content-button">
+                                                    <div class="manualContent-post-list-items-item-content-button-circle">
+                                                        <svg viewBox="0 0 36 50" class="circular-chart">
+                                                            <path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+                                                                a 15.9155 15.9155 0 0 1 0 31.831
+                                                                a 15.9155 15.9155 0 0 1 0 -31.831">
+                                                            </path>
+                                                            <path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+                                                                a 15.9155 15.9155 0 0 1 0 31.831
+                                                                a 15.9155 15.9155 0 0 1 0 -31.831">
+                                                            </path>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="manualContent-post-list-items-item-content-button-text">Xem thêm</p>
+                                                </a>                       
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="homeBanner-item">
+                        <div class="homeBanner-item-image">
+                            <img src="images/phongkhack3.jpg" alt="">
+                        </div>
+                        <div class="dv-posi">
+                            <div class="btn-esp-line project-btn">
+                                <div class="btn-esp m-mid">
+                                    <p class="btn-esp-text">
+                                        Vật tư phần thô  
+                                    </p>
+                                    <span class="curved curved-left"></span>
+                                    <span class="curved curved-right"></span>
+                                </div>
+                            </div>
+                            <div class="dv-wrap">
+                                <div class="dv-con">
+                                    <div class="dnor dv-side">
+                                        <div class="dnor-item dv-left">
+                                            <h3 class="t-heading white m-small">
+                                                Thiết kế nội thất nhà a Thái Long Biên                                                                      
+                                            </h3>
+                                            <div class="dv-left-content">
+                                                <div class="dv-left-list">
+                                                    <p class="dv-text">
+                                                        <span class="fw-7">Tên công trình:</span>anh Thái                                                                                   
+                                                    </p>
+                                                    <p class="dv-text">
+                                                        <span class="fw-7">Địa điểm:</span>Long Biên                                                                                   
+                                                    </p>
+                                                    <p class="dv-text">
+                                                        <span class="fw-7">Hạng mục:</span>Nội Thất                                                                                    
+                                                    </p>                                                         
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dnor-item dv-right">
+                                            <div class="dv-right-content">
+                                                <h4 class="dv-right-title">
+                                                    Nhận thi công                                                                            
+                                                </h4>
+                                                <div class="dnor dv-right-list">
+                                                    <div class="dnor-item dv-right-item">
+                                                        <div class="dv-text fw-7 link">
+                                                            <img width="16" height="16" src="images/dv-icon-plus.svg" alt="" class="icon entered lazyloaded">Nhà phố                                                                                        
+                                                        </div>
+                                                        <div class="dv-text fw-7 link">
+                                                            <img width="16" height="16" src="images/dv-icon-plus.svg" alt="" class="icon entered lazyloaded" > Biệt thự                                                                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="manualContent-post-list-items-item-content-button">
+                                                    <div class="manualContent-post-list-items-item-content-button-circle">
+                                                        <svg viewBox="0 0 36 50" class="circular-chart">
+                                                            <path class="circle-bg" stroke-dasharray="72, 100" d="M18 2.0845 
+                                                                a 15.9155 15.9155 0 0 1 0 31.831
+                                                                a 15.9155 15.9155 0 0 1 0 -31.831">
+                                                            </path>
+                                                            <path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+                                                                a 15.9155 15.9155 0 0 1 0 31.831
+                                                                a 15.9155 15.9155 0 0 1 0 -31.831">
+                                                            </path>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="manualContent-post-list-items-item-content-button-text">Xem thêm</p>
+                                                </a>                       
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="homeBanner-smImage">
+                    <div class="image">
+                        <img src="images/phongkhach.jpg" alt="">
+                    </div>
+                    <div class="image">
+                        <img src="images/phongkhack1.jpg" alt="">
+                    </div>
+                    <div class="image">
+                        <img src="images/phongkhack3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="duan-write">
+            <div class="write-content mona-content aos-init aos-animate container" data-aos="fade-up">
+                <div class="write-head">
+                    <h2 class="t-heading aos-init aos-animate" data-aos="flip-up">
+                        [Update] Bảng giá thiết kế xây dựng nhà phố 2022 trọn gói                                </h2>
+                </div>
+                <div class="write-menu mona-content aos-init aos-animate" data-aos="fade-up">
+                    <p>Danh mục</p>
+                <ul>
+                <li><a >Hiểu thêm về tư vấn thiết kế</a></li>
+                <li><a >Vì sao nên chọn IGcons thiết kế</a></li>
+                <li><a >3 Lợi ích cực lớn khi xây dựng nhà phố tại IGcons</a></li>
+                <li><a >Các giai đoạn lớn trong thiết kế thi công nhà phố tại&nbsp;</a></li>
+                </ul>
+                </div>
+                <p>&nbsp;</p>
+                <h2><strong>Hiểu thêm về tư vấn thiết kế</strong></h2>
+                <p>Đây là công việc sáng tạo trong sắp xếp không gian, kết hợp giữa mặt bằng, không gian, hình thức, cấu trúc của một công trình sao cho sự bố trí, sắp đặt đó tạo nên một không gian sống đẹp, chất lượng, tiện ích và tạo một môi trường sống thuận tiện, thoải mái.</p>
+                <p>Công việc này không chỉ đòi hỏi tính tư duy, sáng tạo mà còn thể hiện tính thẩm mỹ cũng như sự hài hòa của ngôi nhà đối với môi trường sống xung quanh.</p>
+                <p>Khi ngôi nhà của bạn có được thiết kế kiến trúc rõ ràng, thì việc định hình phong cách, sắp xếp không gian nội thất, đồ đạc sẽ trở nên tối ưu hơn, tránh những chi phí phát sinh không đáng có.<br>
+                <a id="t2"></a></p>
+                <h2><strong>Vì sao nên chọn công ty tư vấn thiết kế xây dựng IGcons?</strong></h2>
+                <p>Đó chắc chắn là sự UY TÍN</p>
+                <p>Quý vị đang rất muốn lựa chọn cho gia đình mình một đơn vị thiết kế thi công uy tín để đặt trọn niềm tin đúng không nào?</p>
+                <p>Công ty thiết kế xây dựng IGcons là một trong những nhà thầu chuyên về thi công tận tâm trên địa bàn Hà Nội. Đến với công ty, khách hàng sẽ được hài lòng về sự lựa chọn đúng đắn của mình.</p>
+                <p>IGcons được thành lập dựa trên đội ngũ chuyên gia và kỹ sư với 8 năm kinh nghiệm về lĩnh vực tư vấn thiết kế xây dựng nhà trên địa bàn Hà Nội. Chúng tôi đã trực tiếp tham gia tư vấn, thiết kế và thi công hàng trăm công trình nhà ở dân dụng trên địa bàn. Mọi gia chủ đều đánh giá cao về chất lượng dịch vụ, sản phẩm của IGcons.</p>
+                <p>Nhờ có kinh nghiệm thi công phong phú, cùng những hiểu biết thực tế về mong muốn của khách hàng trong quá trình thi công. IGcons tin tưởng sẽ đưa ra những bản thiết kế phù hợp cho khách hàng, giúp khách hàng tránh đi những thay đổi không đáng có khi bắt tay vào thi công thực tế.</p>
+                <p>Công ty sẽ mang đến sự an tâm đến với quý vị, tinh thần cộng thêm đó là sự tận tâm… nhằm khẳng định mình là thương hiệu được Quý khách hàng tin cậy nhất trên địa bàn Hà Nội.<br>
+                <a id="t3"></a></p>
+                <h2><strong>3 lợi ích cực lớn khi thiết kế xây dựng nhà phố tại IGcons</strong></h2>
+                <ul>
+                <li><strong>Được tư vấn toàn diện trước khi xây dựng</strong></li>
+                </ul>
+                <p>Đội ngũ tư vấn viên của IGcons sẽ hỗ trợ trao đổi cùng quý khách về những vấn đề về bố trí mặt bằng, kết cấu phòng ốc phù hợp với nhu cầu và công năng sử dụng của khách hàng. Ngoài ra chúng tôi còn giúp quý khách dự trù tài chính, chuẩn bị những thủ tục pháp lý cần thiết, kế hoạch thi công và thời gian thi công…</p>
+                <ul>
+                <li><strong>Hoàn thành bước xin cấp Giấy phép xây dựng</strong></li>
+                </ul>
+                <p>Igcons sẽ đảm nhận hoàn tất thủ tục xin Giấy phép xây dựng nếu khách hàng yêu cầu.</p>
+                <ul>
+                <li><strong>Bản thiết kế nhà phố</strong></li>
+                </ul>
+                <p>Chúng tôi sẽ hỗ trợ bản thiết kế nhà cho khách hàng đối với các mẫu thiết kế đơn giản. Còn đối với các mẫu thiết kế đòi hỏi cao về tính thẩm mỹ, có phong cách riêng thì sẽ được thỏa thuận bằng một hợp đồng thiết kế chỉnh chu.<br>
+                <a id="t4"></a></p>
+                <h2><strong>Các giai đoạn lớn trong thiết kế thi công nhà phố tại IGcons</strong></h2>
+                <h3><em>Giai đoạn thiết kế và chuẩn bị mặt bằng</em></h3>
+                <p>Bản vẽ thiết kế chính là nền tảng để xây dựng nhà phố. Trong bản vẽ sẽ trình bày cụ thể phần kiến trúc, mặt tiền và cơ cấu. Tại IGcons luôn có một đội ngũ kiến trúc sư và kỹ sư với nhiều năm kinh nghiệm trong nghề. Đảm bảo sẽ cho ra những bản thiết kế đẹp và phù hợp nhất cho khách hàng.</p>
+                <p>Bản vẽ đã có thì tiếp theo là bước thi công. Và để mọi việc được suôn sẻ thì công đoạn chuẩn bị mặt bằng thi công cũng rất quan trọng. Nếu khu vực xây dựng là đất trống thì việc chuẩn bị mặt bằng sẽ đơn giản. Nhưng nếu trên mảnh đất có nhà hoặc công trình cũ thì cần phải phá dỡ.</p>
+                <p>Trong trường hợp cần phải phá dỡ nhà cũ, IGcons sẽ khảo sát địa hình thật kỹ để lên phương án phá dỡ, cần chuẩn bị các giấy tờ cần thiết nộp cho phòng thanh tra xây dựng Phường và Quận. Tiến hành che chắn xung quanh trước khi thực hiện. Tập kết máy móc, thiết bị cần thiết để tiến hành phá dỡ, sau đó thu gom phế liệu có thể tái sử dụng và cuối cùng là hút hầm cầu và dọn dẹp xà bần.</p>
+                <p>Tiếp đó, IGcons sẽ tập kết vật liệu chuẩn bị cho những bước thi công ban đầu, tùy vào quy mô thi công để quyết định về số lượng vật tư tập kết, đối với những ngôi nhà nhỏ sẽ chia ra nhiều đợt cung cấp vật tư để đảm bảo về không gian chứa, giúp quá trình thi công được thuận tiện.</p>
+                <p>Chuẩn bị các biển báo, rào chắn cần thiết. Các công tác di dời đồng hồ điện, nước với những ngôi nhà cũ cũng cần phải được đảm bảo.</p>
+                <h3><em>Giai đoạn thi công phần thô </em></h3>
+                <p>Thi công phần thô là công đoạn quan trọng ảnh hưởng trực tiếp đến chất lượng xây dựng. Chình vì thế mà các kỹ sư tại IGcons luôn có trách nhiệm giám sát thực hiện đúng với bản vẽ đã được kiến trúc sư và gia chủ thông qua trước đó. Mỗi công đoạn đều được tuân theo quy trình như sau:</p>
+                <ul>
+                <li>Đào móng, xử lý nền, thi công cốt pha, cốt thép và đổ bê tông móng từ đầu cọc ép/ cọc khoan nhồi trở lên.</li>
+                <li>Xây công trình ngầm như: bể tự hoại và hố ga bằng gạch.</li>
+                <li>Xây dựng cốt pha, cốt thép, đổ bê tông bản cầu thang, đà giằng, đà kiềng, dầm, cột, sàn… tất cả các tầng, sân thượng và mái theo thiết kế.</li>
+                <li>Xây dựng mái, dựa trên thiết kế về loại mái tôn, ngói hay mái bê tông</li>
+                <li>Xây gạch và tô trát hoàn thiện tất cả các tường bao che, tường ngăn phòng, hộp gen kỹ thuật, bậc tam cấp và bậc cầu thang bằng gạch ống.</li>
+                <li>Lắp đặt thêm hệ thống cấp thoát nước nguội âm tường.</li>
+                <li>Lắp đặt hệ thống ống luồn, hộp đấu nối cho dây điện các loại, dây điện thoại, dây internet và cáp truyền hình âm tường.</li>
+                <li>Thi công chống thấm sê nô, nhà vệ sinh, tầng thượng. Riêng phần chống thấm tường đã được kết hợp trong bước trộn hóa chất vào vữa xây.</li>
+                </ul>
+                <h3><em>Giai đoạn hoàn thiện công trình nhà phố</em></h3>
+                <p>Đây là giai đoạn cuối cùng trong thiết kế thi công nhà phố trọn gói. Tại Igcons đây là giai đoạn mà công ty chú trọng nhất. Ở giai đoạn này Igcons sẽ đảm bảo thực hiện và giám sát chặt chẽ các công việc sau:</p>
+                <ul>
+                <li><strong>Trát tường toàn bộ nhà:</strong> Tiến hành hoàn thiện toàn bộ căn nhà qua từng lớp, sau xây thô chính là lớp trát tường, Igcons sẽ kiểm tra chi tiết từng công đoạn để ngôi nhà hoàn hảo hơn.</li>
+                <li><strong>Láng sàn: </strong>Đây là việc cần thực hiện trước khi lát gạch.</li>
+                <li><strong>Ốp lát gạch:</strong> Mạch gạch và sự ngay hàng thẳng lối của những viên gạch là việc bạn dễ quan sát được, khi phát hiện ra có chỗ sai sót Igcons sẽ báo ngay với đội thi công để khắc phục để đến vẻ đẹp tổng hòa chung của ngôi nhà.</li>
+                <li><strong>Sơn nước nội ngoại thất:</strong> Giai đoạn này yêu cầu cao về sự tỉ mỉ vì nó ảnh hưởng trực tiếp đến thẩm mỹ của ngôi nhà. Vì thế mà công ty thường xuyên kiểm tra tiến độ và chất lượng ở giai đoạn này.</li>
+                <li><strong>Lắp đặt điện, nước và các hệ thống kỹ thuật: </strong>Igcons sẽ đảm bảo ác thiết bị vệ sinh, các thiết bị cuối của hệ thống điện và hệ thống nước điều phải được lắp đặt và hoạt động ổn định</li>
+                <li><strong>Lắp đặt nội thất (nếu có):</strong> Igcons sẽ dựa trên thiết kế nội thất với sự phân bố, lựa chọn nội thất phù hợp kèm theo màu sắc hài hòa, kích thước tương xứng để tạo nên một tổng thể nhà phố hài hòa và ấm áp.</li>
+                </ul>
+                <p>Trên đây là những thông tin chi tiết nhất về báo giá, cách thức thi công, quy trình làm việc của IGcons trong thiết kế thi công nhà phố trọn gói. Hy vọng, khách hàng thông qua bài viết này sẽ hiểu rõ hơn về dịch vụ thiết kế thi công nhà phố tại IGcons. Nếu có bất kì thắc mắc hay có nhu cầu thiết kế thi công nhà phố hãy liên hệ với IGcons thông qua hotline hoặc địa chỉ đính kèm.</p>
+            </div>
+        </section>
+        <section>
+            <div class="contactForm">
+                <div class="contact-br aos-init aos-animate" data-aos="fade-left">
+                    <div class="contact-br-img">
+                        <img width="1055" height="767" src="images/contact-br.png" alt=""  data-ll-status="loaded" class="entered lazyloaded">
+                    </div>
+                </div>
+                <div class="contactForm-retangle-item-1 contactForm-retangle aos-init aos-animate" data-aos="fade-down" data-aos-duration="1600">
+                    <img src="images/contact-retangle-1.png" alt="">
+                </div>
+                <div class="contactForm-retangle-item-2 contactForm-retangle aos-init aos-animate" data-aos="fade-up" data-aos-duration="1600">
+                    <img src="images/contact-retangle-2.png" alt="">
+                </div>
+                <div class="contactForm-retangle-item-3 contactForm-retangle aos-init aos-animate" data-aos="fade-down" data-aos-duration="1600">
+                    <img src="images/contact-retangle-3.png" alt="">
+                </div>
+                <div class="contactForm-retangle-item-4 contactForm-retangle aos-init aos-animate" data-aos="fade-up" data-aos-duration="1600">
+                    <img src="images/contact-retangle-4.png" alt="">
+                </div>
+                <div class="contactForm-retangle-item-5 contactForm-retangle aos-init aos-animate" data-aos="fade-up" data-aos-duration="1600">
+                    <img src="images/contact-retangle-5.png" alt="">
+                </div>
+                <div class="contactForm-retangle-item-6 contactForm-retangle aos-init aos-animate" data-aos="fade-down" data-aos-duration="1600">
+                    <img src="images/contact-retangle-6.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="form aos-init aos-animate" data-aos="fade-up">
+                        <h4>Để lại lời nhắn cho chúng tôi</h4>
+                        <form action="">
+                            <div class="form-item">
+                                <input class="form-item-1" type="text" placeholder="Họ tên khách hàng" required="required"> 
+                            </div>
+                            <div class="form-item form-item-btw">
+                                <div class="form-item form-item-btw-son">   
+                                    <input class="form-item-2 " type="text" placeholder="Emai" required="required"> 
+                                </div>
+                                <div class="form-item form-item-btw-son">               
+                                    <input class="form-item-3" type="text" placeholder="Số điên thoại" required="required"> 
+                                    <p>+84</p>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <textarea class="form-item-4" required="required" name="" id="" cols="30" rows="10" placeholder="Nội dung lời nhắn" ></textarea>
+                            </div>
+                            <button type="submit" class="form-item-5"s>
+                                <img src="images/evolope.svg" alt="">
+                                <p class="text">Gửi ngay</p>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+    <div class="phonering-alo-zalo">
+        <a href="" target="_blank" rel="nofollow" class="echbay-phonering-zalo-event">
+            <img src="images/zalo.png" alt="">    
+        </a>
+    </div>
+    <div class="icon icon-fixed">
+        <img width="40" height="40" src="images/icon-phone.svg" alt="" class="entered lazyloaded">
+        <div class="phone-number">0838.909.468</div>
+    </div>
+    <a id="scrollToTop"></a>
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -146,7 +997,7 @@
                 </div>
                 <div class="footer-tradeLocation col-xl-3 col-md-3 col-sm-3">
                     <span>văn phòng giao dịch</span>
-                    <img src="images/z3558515945391_c2e83719ce4cf14dacccbc9d78fb1678-370x220.jpg" alt="tradeLocation">
+                    <img src="images/map.jpg" alt="tradeLocation">
                 </div>
             </div>    
             <div class="footer-second">
@@ -166,6 +1017,8 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js" ></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" ></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" ></script>
+    <script src="https://kit.fontawesome.com/2872f79842.js" crossorigin="anonymous"></script>
+    <script src="./libraries/aos-master/dist/aos.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
