@@ -166,6 +166,15 @@ scrollToTop.on('click', function(e) {
   $('html, body').animate({scrollTop:0}, '200');
 });
 
+const ResSearch = document.querySelector('.res-search'),
+      resButton = document.querySelector('.res-search-button'),
+      resInput = document.querySelector('.res-search-input');
+
+      resButton.addEventListener('click', () => {
+    ResSearch.classList.toggle('active');
+    resInput.focus();
+})
+
 function openSlide(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -205,3 +214,5 @@ function consProcess(consProcessName) {
   document.getElementById(consProcessName).style.display = "block";  
 
 }
+
+
