@@ -1039,6 +1039,23 @@
   font-size: 2.4rem;
 }
 
+.orther-contact-wrap::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background-color: #26948A;
+}
+
+.orther-contact-wrap:hover::before {
+  width: 3%;
+  right: 0;
+}
+
 @-webkit-keyframes phoneRing {
   0% {
     -webkit-transform: rotate(0) scale(1) skew(1deg);
