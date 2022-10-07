@@ -106,6 +106,7 @@ $('.new-slide').slick({
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
+        arrows: false
       },
     }
   ]
@@ -122,8 +123,29 @@ $('.swiper-wrapper').slick({
       breakpoint: 426,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         rows: 1,
+      },
+    }
+  ]
+});
+
+$('.priceList-list').slick({
+  arrows: false,
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        
+      },
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        
       },
     }
   ]
@@ -183,4 +205,3 @@ function consProcess(consProcessName) {
   document.getElementById(consProcessName).style.display = "block";  
 
 }
-
