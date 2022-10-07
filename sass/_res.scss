@@ -322,6 +322,10 @@
         margin-top: 12rem;
         margin-bottom: 10rem;
     }
+    .manualContent-sidebarRight .relatedPosts .list .right {
+        width: 17rem;
+        text-align: left;
+    }
 }
 @media (max-width:768px) {
     .frontpage .distinctive-content-item-left h4 {
@@ -508,9 +512,10 @@
         font-size: 1.4rem;
     }
     .cons-process .process-slider .swiper-slide .process-item .process-box {
-        width: 150px !important;
-        height: 150px !important ;
+        width: 120px !important;
+        height: 120px !important ;
     }
+   
     .tab-slide .head-right {
         margin: 6rem -20rem 5rem;
     }
@@ -542,11 +547,11 @@
 
     }
     .manualContent .slick-dots {
-        bottom: -67rem;
+        bottom: -8rem;
         margin-left: 35%;
     }
     .manualContent .slick-next {
-        bottom: -67rem;
+        bottom: -8rem;
         right: 29rem !important;
     }
     .manualContent-sidebarRight{
@@ -600,7 +605,7 @@
         margin-bottom: 30px;
     }
     .cons-process .process-slider .swiper-slide {
-        width: 108px !important;
+        width: 117px !important;
     }
     .cons-process .ss-pd {
         padding: 70px 0 0 0rem;
@@ -622,6 +627,7 @@
         margin: 10rem auto;
         width: 13rem;
     }
+
 }
 @media (max-width:425px) {
     .homeBanner-item-fixW-resolution h2 {
@@ -763,7 +769,7 @@
     }
     .frontpage .construction-item-sixth .new-evaluate-title h4 {
         width: 24rem;
-        margin-bottom: 3rem;
+        margin: 0rem 40px 3rem 0px
     }
     .footer-second {
         border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -823,10 +829,10 @@
         font-size: 1.7rem;
     }
     .cons-reason .reason-right .reason-content .reason-name{
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
     .cons-reason .reason-right .reason-content .reason-des{
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
     .cons-as .as-item {
         width: 48%;
@@ -850,21 +856,22 @@
         width: 96%;
     }
     .manualContent .slick-dots {
-        bottom: -67rem;
+        bottom: -7rem;
         margin-left: 28%;
     }
     .manualContent .slick-next {
         right: 9rem !important;
+        bottom: -7rem;
     }
     .design .reason-item-slide {
         width: 65rem;
         height: 70rem;
         position: absolute;
         right: -25rem;
-        top: 28rem;
+        top: 38rem;
     }
     section.cons-process {
-        margin-bottom: 13rem;
+        // margin-bottom: 13rem;
     }
     .priceList h4{
         font-size: 22px;
@@ -1041,6 +1048,7 @@
     .frontpage .construction-item-fourth .site-images__image--son {
         margin: 0 1.5rem 1.5rem 5px;
         width: 45%;
+        height: 25rem;
     }
     .frontpage .construction-item-fifth .evaluate-item h4{
         font-size: 2.2rem;
@@ -1050,9 +1058,119 @@
         width: 3.2rem;
         margin-right: 1rem;
     }
+    .cons-process .box-desc-procedure {
+        margin-bottom: 3rem;
+    }
+    .cons-process .process-slider .swiper {
+        height: 26rem;
+    }
+    .frontpage .construction-item-sixth {
+        margin-left: 2rem;
+    }
 }
 @media (max-width:375px) {
-    
+    .construction-item-third .home-we .we-head-text p {
+        font-size: 35px !important;
+        letter-spacing: 18px;
+    }
+    .construction-item-third .manualContent-sidebarRight .form-item-btw-son input {
+        width: 18.3rem !important;
+    }
+    .frontpage .construction-item-fourth .site-images__image--son {
+        width: 44%;
+    }
+    .frontpage .construction-item-fifth .evaluate-slider-item__content--item .dg-user .dg-star {
+        width: 38%;
+    }
+    .frontpage .construction-item-sixth .new-evaluate-slide-item .image {
+        width: 25.3rem;
+        height: 25.3rem;
+    }
+    .frontpage .construction-item-sixth {
+        margin-left: 2rem;
+    }
+    .frontpage .construction-item-sixth .new-evaluate-title h4 {
+        margin: 0rem 40px 20px 0px;
+    }
+    .cons-process .process-slider .swiper-slide {
+        width: 140px !important;
+    }
+    .cons-process .process-slider .swiper {
+        margin: -16px;
+    }
+    section.cons-process {
+        margin-bottom: -20rem;
+    }
+    .construction-list__item--image {
+        margin: 0 !important;
+        height: 15rem;
+        width: 18rem;
+    }
+    .ig-proj .manualContent-post-list-items-item-content-button {
+        margin: 1rem auto;
+        width: 13rem;
+    }
+    .design .reason-item-slide {
+        width: 60rem;
+        height: 70rem;
+        position: absolute;
+        right: -25rem;
+        top: 33rem;
+    }
+    .cons-reason .reason-right .reason-content .reason-name {
+        font-size: 2rem;
+    }
+    .cons-reason .reason-right .reason-content .reason-des {
+        font-size: 1.7rem;
+    }
+    .design .reason-item {
+        width: 38rem !important;
+    }
+    .cons-process .box-desc-procedure {
+        margin-bottom: 23rem;
+        margin-top: -18rem;
+    }
+    .contact-content {
+        margin-top: 3rem !important;
+    }
+    .cons-process .process-slider {
+        margin-bottom: 20rem;
+    }
+    .construction-item-third .manualContent-sidebarRight .form .form-item-5 button::before {
+        left: 27rem;
+    }
+    .construction-item-third .manualContent-sidebarRight .form .form-item-5 .curved-left {
+        left: 25.1rem !important;
+    }
+    .construction-item-third .manualContent-sidebarRight .form .form-item-5 .curved-right {
+        right: 31.1rem;
+    }
+    .manualContent-sidebarRight .formSignup .form-item-5 p {
+        left: -3rem;
+    }
+    .manualContent-sidebarRight .formSignup .form-item-5 img {
+        left: -6rem;
+    }
+    .construction-item-third .manualContent-sidebarRight .form .form-item-5 button img {
+        top: 3rem;
+        left: 12rem;
+    }
+    .manualContent .slick-dots {
+        bottom: -7rem;
+        margin-left: 17%;
+    }
+    .manualContent-sidebarRight .relatedPosts .list .right {
+        width: 25rem;
+    }
+    .manualContent-sidebarRight .formSignup .form-item-5 button::before {
+        left: 26rem;
+    }
+    .manualContent-sidebarRight .formSignup .form-item-5 .curved-right {
+        right: 33.2rem;
+    }
+    .manualContent-sidebarRight .formSignup .form-item-5 .curved-left {
+        left: 24rem;
+    }
 }
 .checkbox-menu{
     display: none;
