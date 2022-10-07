@@ -453,6 +453,14 @@
   }
 }
 
+.checkbox-menu {
+  display: none;
+}
+
+.header-nav .logo {
+  display: none;
+}
+
 .footer {
   background-color: #2E3449;
   padding: 7.2rem 0 4.6rem 0;
@@ -1611,6 +1619,53 @@
 
 .phonering-alo-zalo img {
   margin-top: 5px;
+}
+
+img {
+  width: 100%;
+  height: 100% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.construction-item-third .home-we .we-head-text p {
+  font-size: 50px;
+}
+
+.construction-item-third .manualContent-sidebarRight .form-item-btw-son input {
+  border-radius: 5px !important;
+  margin-left: -1rem;
+}
+
+.address-headnav, .social-headnav {
+  display: none;
+}
+
+.cons-process .process-slider .swiper-slide .process-item .process-box {
+  width: 200px;
+  height: 200px;
+}
+
+.priceList-list-item {
+  padding: 1rem;
+}
+
+.cons-process .process-slider .swiper-slide:not(:last-child) .process-box::before {
+  width: 100%;
+}
+
+.construction {
+  margin-bottom: 5rem;
+  margin-top: 10rem;
+}
+
+.res-search {
+  display: none;
+}
+
+.res-search-button i {
+  color: #26948a;
+  font-size: 18px;
 }
 
 html,
@@ -3803,6 +3858,10 @@ section.duan-write {
     width: 51rem !important;
     margin-left: 64rem;
   }
+  .construction {
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -3848,7 +3907,7 @@ section.duan-write {
     height: 0.4rem;
     width: 100%;
     border-radius: 1rem;
-    background: #333;
+    background: #26948A;
     margin-top: 7px;
   }
   .navbar-container .hamburger-lines .line1 {
@@ -3886,7 +3945,7 @@ section.duan-write {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: -4rem;
+    margin-left: -2rem;
     padding-left: 3rem;
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
     transition: -webkit-transform 0.5s ease-in-out;
@@ -3904,16 +3963,16 @@ section.duan-write {
             transform: translateX(0);
   }
   .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -webkit-transform: rotate(42deg);
+            transform: rotate(42deg);
   }
   .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
     -webkit-transform: scaleY(0);
             transform: scaleY(0);
   }
   .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    -webkit-transform: rotate(-42deg);
+            transform: rotate(-42deg);
   }
   .navbar input[type="checkbox"],
   .navbar .hamburger-lines {
@@ -3935,7 +3994,6 @@ section.duan-write {
     transition: 0.3s ease-in-out;
     display: block;
     margin-bottom: 3rem;
-    border-bottom: 1px solid;
     padding-bottom: 2rem;
     width: 32rem;
     text-align: left;
@@ -3945,9 +4003,12 @@ section.duan-write {
   }
   .header-nav .logo {
     display: block !important;
+    width: 15rem;
+    margin-left: 1.5rem;
   }
   .header-nav {
-    padding-top: 0rem;
+    padding: 0rem;
+    height: 8rem;
   }
   .address-headnav, .social-headnav {
     display: block !important;
@@ -4081,7 +4142,7 @@ section.duan-write {
     margin-right: 0.5rem;
   }
   .ig-proj .manualContent-post-list-items-item-content-button {
-    margin: 16rem auto;
+    margin: 2rem auto;
     width: 13rem;
   }
   .cons-process .process-slider .swiper {
@@ -4115,9 +4176,77 @@ section.duan-write {
     width: 17rem;
     text-align: left;
   }
+  .cons-process .box-desc-procedure {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+  }
+  .construction {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+  }
+  .res-search {
+    position: relative;
+    height: 50px;
+    display: block;
+    width: 5rem;
+  }
+  .res-search .res-search-input {
+    background-color: #fff;
+    border: 0;
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    -webkit-transition: width 0.3s ease;
+    transition: width 0.3s ease;
+  }
+  .res-search-button {
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  }
+  .res-search-button i {
+    position: absolute;
+    top: -7.5rem;
+    left: 93rem;
+  }
+  .res-search-button:focus, .res-search-input:focus {
+    outline: none;
+  }
+  .res-search.active .res-search-input {
+    width: 30rem;
+    position: absolute;
+    z-index: 1;
+    border-radius: 3rem;
+    border: 1px solid #cecece;
+    left: 67rem;
+    top: -1rem;
+  }
+  .res-search.active .res-search-button i {
+    left: 93rem;
+  }
 }
 
 @media (max-width: 768px) {
+  .res-search-button i {
+    left: 67.4rem;
+  }
+  .res-search.active .res-search-input {
+    left: 41.6rem;
+  }
+  .res-search.active .res-search-button i {
+    left: 67.4rem;
+  }
   .frontpage .distinctive-content-item-left h4 {
     font-size: 40px;
   }
@@ -4285,7 +4414,7 @@ section.duan-write {
     margin-bottom: -11rem;
   }
   .rough-content section.duan-write {
-    margin-top: -15rem;
+    margin-top: 0rem;
     margin-bottom: 10rem;
   }
   .cons-process .process-slider .swiper-wrapper {
@@ -4424,12 +4553,21 @@ section.duan-write {
     margin-right: 70px;
   }
   .ig-proj .manualContent-post-list-items-item-content-button {
-    margin: 10rem auto;
+    margin: 1rem auto;
     width: 13rem;
   }
 }
 
 @media (max-width: 425px) {
+  .res-search-button i {
+    left: 33.4rem;
+  }
+  .res-search.active .res-search-input {
+    left: 11.6rem;
+  }
+  .res-search.active .res-search-button i {
+    left: 33.4rem;
+  }
   .homeBanner-item-fixW-resolution h2 {
     font-size: 40px;
   }
@@ -4690,7 +4828,7 @@ section.duan-write {
   }
   .manualContent-sidebarRight .formSignup .form-item-5 {
     width: 75rem;
-    margin: 0 0 0 -15rem;
+    margin: 0 0 0 -17rem;
   }
   .construction-item-third .manualContent-sidebarRight .form .form-item-5 .curved-right {
     right: 29.1rem;
@@ -4771,7 +4909,7 @@ section.duan-write {
     width: 21rem;
   }
   .ig-proj .manualContent-post-list-items-item-content-button {
-    margin: -9rem auto;
+    margin: 1rem auto;
     width: 13rem;
   }
   .frontpage .construction-item-fifth .evaluate-slider-item__content--item .dg-user-name {
@@ -4861,6 +4999,15 @@ section.duan-write {
 }
 
 @media (max-width: 375px) {
+  .res-search-button i {
+    left: 28.4rem;
+  }
+  .res-search.active .res-search-input {
+    left: 6.6rem;
+  }
+  .res-search.active .res-search-button i {
+    left: 28.4rem;
+  }
   .construction-item-third .home-we .we-head-text p {
     font-size: 35px !important;
     letter-spacing: 18px;
@@ -4963,47 +5110,10 @@ section.duan-write {
   .manualContent-sidebarRight .formSignup .form-item-5 .curved-left {
     left: 24rem;
   }
-}
-
-.checkbox-menu {
-  display: none;
-}
-
-.header-nav .logo {
-  display: none;
-}
-
-img {
-  width: 100%;
-  height: 100% !important;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.construction-item-third .home-we .we-head-text p {
-  font-size: 50px;
-}
-
-.construction-item-third .manualContent-sidebarRight .form-item-btw-son input {
-  border-radius: 5px !important;
-  margin-left: -1rem;
-}
-
-.address-headnav, .social-headnav {
-  display: none;
-}
-
-.cons-process .process-slider .swiper-slide .process-item .process-box {
-  width: 200px;
-  height: 200px;
-}
-
-.priceList-list-item {
-  padding: 1rem;
-}
-
-.cons-process .process-slider .swiper-slide:not(:last-child) .process-box::before {
-  width: 100%;
+  .manualContent-sidebarRight .formSignup .form-item-5 {
+    width: 75rem;
+    margin: 0 0 0 -15rem;
+  }
 }
 
 .box-date-post {
