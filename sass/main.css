@@ -4209,7 +4209,7 @@ section.duan-write {
     top: 0;
     left: 0;
     height: 50px;
-    width: 50px;
+    width: 0;
     -webkit-transition: -webkit-transform 0.3s ease;
     transition: -webkit-transform 0.3s ease;
     transition: transform 0.3s ease;
@@ -4235,9 +4235,41 @@ section.duan-write {
   .res-search.active .res-search-button i {
     left: 93rem;
   }
+  .fixNav .res-search-button {
+    left: -20rem;
+  }
+  .fixNav .res-search .res-search-input {
+    left: -20rem;
+    position: absolute;
+  }
+  .fixNav .res-search i {
+    left: 113rem;
+  }
+  .fixNav .res-search.active .res-search-button i {
+    left: 113rem;
+  }
+  .fixNav .res-search.active .res-search-input {
+    left: 67rem;
+  }
 }
 
 @media (max-width: 768px) {
+  .fixNav .res-search-button {
+    left: -20rem;
+  }
+  .fixNav .res-search .res-search-input {
+    left: -20rem;
+    position: absolute;
+  }
+  .fixNav .res-search i {
+    left: 87.4rem;
+  }
+  .fixNav .res-search.active .res-search-button i {
+    left: 87.4rem;
+  }
+  .fixNav .res-search.active .res-search-input {
+    left: 41.6rem;
+  }
   .res-search-button i {
     left: 67.4rem;
   }
@@ -4559,6 +4591,22 @@ section.duan-write {
 }
 
 @media (max-width: 425px) {
+  .fixNav .res-search-button {
+    left: -20rem;
+  }
+  .fixNav .res-search .res-search-input {
+    left: -20rem;
+    position: absolute;
+  }
+  .fixNav .res-search i {
+    left: 53.4rem;
+  }
+  .fixNav .res-search.active .res-search-button i {
+    left: 53.4rem;
+  }
+  .fixNav .res-search.active .res-search-input {
+    left: 6.6rem;
+  }
   .res-search-button i {
     left: 33.4rem;
   }

@@ -393,11 +393,43 @@
             left: 93rem;
         }
     }
+    .fixNav .res-search-button {
+        left: -20rem;
+    }
+    .fixNav .res-search .res-search-input{
+        left: -20rem;
+        position: absolute;
+    }
+    .fixNav .res-search i{
+        left: 113rem;
+    }
+    .fixNav .res-search.active .res-search-button i{
+        left: 113rem;
+    }
+    .fixNav .res-search.active .res-search-input{
+        left: 67rem;
+    }
 }
 @media (max-width:768px) {
+    .fixNav .res-search-button {
+        left: -20rem;
+    }
+    .fixNav .res-search .res-search-input{
+        left: -20rem;
+        position: absolute;
+    }
+    .fixNav .res-search i{
+        left: 87.4rem;
+    }
+    .fixNav .res-search.active .res-search-button i{
+        left: 87.4rem;
+    }
+    .fixNav .res-search.active .res-search-input{
+        left: 41.6rem;
+    }
     .res-search-button {
         i{
-            left: 67.4rem;
+            left: 67.4rem;  
         }
     }
     .res-search.active .res-search-input {
@@ -710,6 +742,22 @@
 
 }
 @media (max-width:425px) {
+    .fixNav .res-search-button {
+        left: -20rem;
+    }
+    .fixNav .res-search .res-search-input{
+        left: -20rem;
+        position: absolute;
+    }
+    .fixNav .res-search i{
+        left: 53.4rem;
+    }
+    .fixNav .res-search.active .res-search-button i{
+        left: 53.4rem;
+    }
+    .fixNav .res-search.active .res-search-input{
+        left: 6.6rem;
+    }
     .res-search-button {
         i{
             left: 33.4rem;
