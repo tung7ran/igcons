@@ -1,4 +1,20 @@
 @media (max-width:1366px) {
+    .homeBanner-item-fixW-resolution {
+        margin: 6rem 0 0 7rem;
+    }
+    .homeBanner-item-fixW-resolution .resolution-item-son {
+        position: relative;
+        width: 35%;
+        padding: 3.5rem;
+        padding-top: 4.3rem;
+    }
+    .homeBanner-item-fixW-resolution .resolution-item{
+        width: 130rem;
+    }
+    .homeBanner-item-fixW-btw {
+        top: -2rem;
+        right: 5rem;
+    }
     .frontpage .distinctive-content{
         width: calc(100%*(6/12));
     }
@@ -33,6 +49,16 @@
     .construction {
         margin-bottom: 10rem;
         margin-top: 10rem;
+    }
+    .design .reason-item-slide {
+        width: 100rem !important;
+        height: 72rem;
+        position: absolute;
+        right: -35rem;
+        top: 3rem;
+    }
+    .design .reason-list-item {
+        padding-top: 12rem !important;
     }
 }
 @media (max-width:1024px) {
@@ -120,6 +146,7 @@
     .navbar .hamburger-lines{
         display: none;
     }
+ 
     .checkbox-menu{
         display: block !important;
     }
@@ -154,6 +181,10 @@
         padding: 0rem;
         height: 8rem;
     }
+    .homeBanner-item-fixW-resolution {
+        margin: 18rem 0 0 7rem;
+    }
+ 
     .address-headnav, .social-headnav{
         display: block !important;
     }
@@ -221,12 +252,7 @@
     }
     .frontpage .construction-item-sixth {
         margin-left: 15rem;
-        // margin-bottom: -35rem;
     }
-    // .frontpage .construction-item-fifth {
-    //     margin-top: 18rem;
-    //     margin-bottom: -26rem;
-    // }
     .frontpage .construction-item-fourth .site-images__image {
         margin: 0 -8px 0 6px;
     }
@@ -245,9 +271,6 @@
     }
     footer .col-md-3{
         width: 25%;
-    }
-    .slick-slider{
-        // height: 75rem;
     }
     .homeBanner-item-image{
         height: 75rem;
@@ -269,8 +292,8 @@
         left: -45px;
     }
     .homeBanner-item-fixW-btw {
-        top: -6rem;
-        right: -7rem;
+        top: 2rem;
+        right: 19rem;
     }
     .banner-content-wrap {
         padding: 20px;
@@ -300,9 +323,6 @@
     }
     .cons-process .process-slider .swiper{
         margin: -20px;
-    }
-    .cons-process .process-slider .swiper-slide {
-        // width: 108px !important;
     }
     .cons-process .process-slider .swiper-slide .process-item .process-box {
         width: 170px !important;
@@ -355,6 +375,8 @@
         height: 50px;
         width: 50px;
         transition: width 0.3s ease;
+        position: absolute;
+        left: -10rem;
     }
     
     .res-search-button {
@@ -409,8 +431,57 @@
     .fixNav .res-search.active .res-search-input{
         left: 67rem;
     }
+    .manualContent-sidebarRight .formSignup .form-item-5 button::before{
+        left: 7rem;
+    }
+    .manualContent-sidebarRight .formSignup .form-item-5 .curved-left{
+        left: 5.1rem;
+    }
+    .manualContent-sidebarRight .formSignup .form-item-5 .curved-right {
+        right: 4.5rem;
+    }
+    .cons-reason .reason-right .reason-content .reason-des {
+        margin-left: -5rem;
+    }
+    .cons-reason .reason-right .reason-icon {
+        width: 2.6rem;
+        height: 3.6rem;
+    }
+    .cons-reason .reason-right .reason-content .reason-des {
+        margin-left: -4rem;
+        margin-top: 2rem;
+    }
+    .design .reason-item-slide {
+        width: 72rem !important;
+        height: 38rem;
+        position: absolute;
+        right: -16rem;
+        top: 3rem;
+    }
+    .design .reason-list-item {
+        padding-top: 0rem !important;
+    }
+    .design .cons-reason .reason {
+        height: 90rem;
+    }
+    .design .idea-img-3 {
+        margin-top: 26rem;
+        width: 45rem !important;
+        margin-left: 48rem;
+    }
+    .design .idea-img-3 .image {
+        left: -48rem;
+        width: 489px;
+        top: -13rem;
+    }
+    .design .reason-list-item {
+        width: calc(100%*(5/12));
+    }
 }
 @media (max-width:768px) {
+    .design .cons-reason .reason {
+        height: 150rem;
+    }
     .fixNav .res-search-button {
         left: -20rem;
     }
@@ -676,13 +747,17 @@
         width: 75rem;
     }
     .manualContent-sidebarRight .formSignup .form-item-5 button::before{
-        left: 31rem;
+        left: 30rem;
     }
     .manualContent-sidebarRight .formSignup .form-item-5 .curved-left {
-        left: 29rem;
+        left: 28rem;
+    }
+    .manualContent-sidebarRight .formSignup .form-item-5 img {
+        top: 2.9rem;
+        left: -2rem;
     }
     .manualContent-sidebarRight .formSignup .form-item-5 .curved-right {
-        right: 28.2rem;
+        right: 29.2rem;
     }
     .manualContent-sidebarRight .relatedPosts .list .right {
         width: 60rem;
@@ -697,11 +772,11 @@
         margin-top: 1rem;
     }
     .design .reason-item-slide {
-        width: 91rem;
+        width: 91rem !important;
         height: 73rem;
         position: absolute;
         right: -18rem;
-        top: 24rem;
+        top: 31rem;
     }
     .design .idea-img-3 {
         margin-top: 58rem;
@@ -798,7 +873,7 @@
         bottom: 9rem;
     }
     .homeBanner-item-fixW-resolution.resolution-about{
-        padding: 0;
+        padding: 30px;
     }
     .homeBanner-item-fixW-resolution.resolution-about h2{
         font-size: 45px;
@@ -813,11 +888,11 @@
         width: 75%;
     }
     .homeBanner-item-fixW-btw {
-        top: -6rem;
+        top: 0rem;
         right: 0rem;
     }
     .homeBanner-item-fixW-resolution {
-        margin: 18rem 0 0 2rem;
+        margin: 10rem 0 0 0;
     }
     .frontpage .distinctive-content {
         width: 100%;
@@ -1005,11 +1080,11 @@
         bottom: -7rem;
     }
     .design .reason-item-slide {
-        width: 65rem;
+        width: 60rem !important;
         height: 70rem;
         position: absolute;
-        right: -25rem;
-        top: 38rem;
+        right: -20rem;
+        top: 46rem;
     }
     section.cons-process {
         // margin-bottom: 13rem;
@@ -1037,7 +1112,7 @@
     }
     .manualContent-sidebarRight .formSignup .form-item-5 {
         width: 75rem;
-        margin: 0 0 0 -17rem;
+        margin: 0 0 0 -16rem;
     }
     .construction-item-third .manualContent-sidebarRight .form .form-item-5 .curved-right {
         right: 29.1rem;
@@ -1198,6 +1273,7 @@
         height: 2.8rem !important;
         width: 3.2rem;
         margin-right: 1rem;
+        margin-bottom: 0rem !important;
     }
     .cons-process .box-desc-procedure {
         margin-bottom: 3rem;
@@ -1208,8 +1284,46 @@
     .frontpage .construction-item-sixth {
         margin-left: 2rem;
     }
+    .header-nav a{
+        width: 16rem;
+    }
+    .homeBanner-item-image {
+        height: 55rem;
+    }
+    .homeBanner-item-fixW-resolution .resolution-item {
+        width: 40rem;
+    }
+    .homeBanner-item-fixW-resolution .resolution-item-son {
+        width: 50%;
+        padding: 1.5rem;
+        padding-top: 3.3rem;
+    }
+    .homeBanner-item-fixW-resolution .resolution-item .resolution-so2, .homeBanner-item-fixW-resolution .resolution-item .resolution-so5 {
+        border-bottom: 1px solid #26948a66;
+        padding-left: 2.3rem;
+        padding-top: 3.3rem;
+    }
 }
 @media (max-width:375px) {
+    .header-nav a{
+        width: 16rem;
+    }
+    .fixNav .res-search-button {
+        left: -20rem;
+    }
+    .fixNav .res-search .res-search-input{
+        left: -20rem;
+        position: absolute;
+    }
+    .fixNav .res-search i{
+        left: 48.4rem;
+    }
+    .fixNav .res-search.active .res-search-button i{
+        left: 48.4rem;
+    }
+    .fixNav .res-search.active .res-search-input{
+        left: 3.6rem;
+    }
     .res-search-button {
         i{
             left: 28.4rem;
@@ -1265,11 +1379,11 @@
         width: 13rem;
     }
     .design .reason-item-slide {
-        width: 60rem;
+        width: 60rem !important;
         height: 70rem;
         position: absolute;
         right: -25rem;
-        top: 33rem;
+        top: 44rem;
     }
     .cons-reason .reason-right .reason-content .reason-name {
         font-size: 2rem;
@@ -1300,7 +1414,7 @@
         right: 31.1rem;
     }
     .manualContent-sidebarRight .formSignup .form-item-5 p {
-        left: -3rem;
+        left: -1rem;
     }
     .manualContent-sidebarRight .formSignup .form-item-5 img {
         left: -6rem;
@@ -1329,4 +1443,17 @@
         width: 75rem;
         margin: 0 0 0 -15rem;
     }
+    .content-houseBuilding .manualContent-sidebarRight .formSignup .form-item-5 p {
+        left: -3rem;
+    }
+}
+
+.cons-reason .reason::before{
+    display: none !important;
+}
+.frontpage .construction-item-fifth .evaluate-item h4 img {
+    height: 2.8rem !important;
+    width: 3rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
 }
