@@ -130,6 +130,14 @@ $('.swiper-wrapper').slick({
   ]
 });
 
+$('.seemore').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  dots: false,
+  Infinity: false,
+  arrows: false,
+});
+
 $('.priceList-list').slick({
   arrows: false,
   slidesToShow: 3,
