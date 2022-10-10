@@ -106,6 +106,7 @@ $('.new-slide').slick({
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
+        arrows: false
       },
     }
   ]
@@ -122,8 +123,29 @@ $('.swiper-wrapper').slick({
       breakpoint: 426,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         rows: 1,
+      },
+    }
+  ]
+});
+
+$('.priceList-list').slick({
+  arrows: false,
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        
+      },
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        
       },
     }
   ]
@@ -143,6 +165,15 @@ scrollToTop.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '200');
 });
+
+const ResSearch = document.querySelector('.res-search'),
+      resButton = document.querySelector('.res-search-button'),
+      resInput = document.querySelector('.res-search-input');
+
+      resButton.addEventListener('click', () => {
+    ResSearch.classList.toggle('active');
+    resInput.focus();
+})
 
 function openSlide(evt, cityName) {
   var i, tabcontent, tablinks;
@@ -183,4 +214,5 @@ function consProcess(consProcessName) {
   document.getElementById(consProcessName).style.display = "block";  
 
 }
+
 

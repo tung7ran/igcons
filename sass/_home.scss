@@ -358,6 +358,7 @@
         text-shadow: 2px 8px 6px #00000033, 0 -5px 35px #ffffff4d;
     }
 }
+
 .orther-contact-wrap {
     background-color: #2E3449;
     width: fit-content;
@@ -389,6 +390,20 @@
             white-space: nowrap;
             font-size: 2.4rem;
         }
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        transition: 0.3s ease-in-out;
+        background-color: #26948A;
+    }       
+    &:hover::before{
+        width: 3%;
+        right: 0;
     }
 }
 @keyframes phoneRing{
@@ -532,6 +547,9 @@
                 }
             }
             .form-item-5{
+                img{
+                    height: 1.6rem !important;
+                }
                 &::before{
                     left: -17.9rem;
                     width: 118.5rem;
@@ -808,4 +826,40 @@
     img{
         margin-top: 5px;
     }
+}
+img{
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+}
+.construction-item-third .home-we .we-head-text p{
+    font-size: 50px;
+}
+.construction-item-third .manualContent-sidebarRight .form-item-btw-son input{
+   border-radius: 5px !important;
+   margin-left: -1rem;
+}   
+.address-headnav, .social-headnav{
+    display: none;
+}
+.cons-process .process-slider .swiper-slide .process-item .process-box {
+    width: 200px;
+    height: 200px;
+}
+.priceList-list-item {
+    padding: 1rem;
+}
+.cons-process .process-slider .swiper-slide:not(:last-child) .process-box::before{
+    width: 100%;
+}
+.construction {
+    margin-bottom: 5rem;
+    margin-top: 10rem;
+}
+.res-search{
+    display: none;
+}
+.res-search-button i{
+    color: #26948a;
+    font-size: 18px;
 }
